@@ -1,22 +1,16 @@
 Language: southern_min
-Language Code: nan
-Lines: orth, translit-seg, gloss, translat
+Language code: nan
+Lines: orth translit-seg gloss translat
 Author: sehyun kim
 Date: January 17, 2024
-Source: Chen, 2020. “A Grammar of Southern Min” https://doi-org.offcampus.lib.washington.edu/10.1515/9781501511868
-
-# replaced ɯ with eu
-# replaced ǝ with eo
-# replaced ɔ with oe
-# replaced ʔ with ?
-# numbers represent tones
+Source a: Chen, 2020. "A Grammar of Southern Min" https://doi-org.offcampus.lib.washington.edu/10.1515/9781501511868
 
 #1
 Source: author
 Vetted: f
 Judgment: g
-Phenomena: {wo, pn}                                
-我 有 車 
+Phenomena: {wo, pn}
+我 有 車
 gua3 u4 tshia1
 1SG have car
 I have a car
@@ -26,7 +20,7 @@ I have a car
 Source: author
 Vetted: f
 Judgment: u
-Phenomena: {wo}                                        
+Phenomena: {wo}
 我 車 有
 gua3 tshia1 u4
 1SG car have
@@ -93,9 +87,9 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: {wo, prn}
-伊 食 橙 
+伊 食 橙
 i1 tsia?8 tshiang2
-this 3SG eat orange
+3SG eat orange
 He eats an orange
 
 
@@ -104,7 +98,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: {pn}
-即 伊 食 橙 
+即 伊 食 橙
 tsit7 i1 tsia?8 tshiang2
 this 3SG eat orange
 This he eats an orange
@@ -176,7 +170,7 @@ i3 sia2 seo?7
 What did he say?
 
 
-#16 
+#16
 Source: author
 Vetted: f
 Judgment: g
@@ -198,7 +192,7 @@ i3 bo?7 sia2 seo?7
 What does he want to say?
 
 
-#18 
+#18
 Source: author
 Vetted: f
 Judgment: g

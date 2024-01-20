@@ -380,7 +380,7 @@ if __name__ == '__main__':
   tslines = []
   for enc in encodings:
     try:
-      tslines = open(tsf, 'rU', encoding=enc).readlines()
+      tslines = open(tsf, 'r', encoding=enc).readlines()
       break
     except UnicodeDecodeError as e:
       if enc == encodings[-1]:
