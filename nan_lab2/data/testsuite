@@ -1,0 +1,302 @@
+Language: southern_min
+Language code: nan
+Lines: orth translit-seg gloss translat
+Author: sehyun kim
+Date: January 17, 2024
+Source a: Chen, 2020. "A Grammar of Southern Min" https://doi-org.offcampus.lib.washington.edu/10.1515/9781501511868
+
+#1
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {wo, pn}
+我 有 車
+gua3 u4 tshia1
+1SG have car
+I have a car
+
+
+#2 wrong order (SOV)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {wo}
+我 車 有
+gua3 tshia1 u4
+1SG car have
+I have a car
+
+
+#3 wrong order (VSO)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {wo}
+有 我 車
+u4 gua3 tshia1
+have 1SG car
+I have a car
+
+
+#4 wrong order (VOS)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {wo}
+有 車 我
+u4 tshia1 gua3
+have car 1SG
+I have a car
+
+
+#5 wrong order (OSV)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {wo}
+車 我 有
+tshia1 gua3 u4
+car 1SG have
+I have a car
+
+
+#6 wrong order (OVS)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {wo}
+車 有 我
+tshia1 u4 gua3
+car have 1SG
+I have a car
+
+
+#7
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {wo, pn}
+阮 去
+gun3 kheu5
+1PL go
+We go (there)
+
+
+#8
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {wo, prn}
+伊 食 橙
+i1 tsia?8 tshiang2
+3SG eat orange
+He eats an orange
+
+
+#9 pronoun combines with determiner
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {pn}
+即 伊 食 橙
+tsit7 i1 tsia?8 tshiang2
+this 3SG eat orange
+This he eats an orange
+
+
+#10 current grammar cannot account for grammaticality
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {det}
+小妹 買 即 領 衫
+sio32beo5 bue3 tsit7 lia3 sa1
+Y.sister buy this CL clothes
+Younger sister bought this clothing
+
+
+#11 current grammar cannot account for grammaticality
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {det}
+小妹 買 即 領
+sio32beo5 bue3 tsit7 lia3
+Y.sister buy this CL
+Younger sister bought this (clothing)
+
+
+#12 current grammar cannot account for ungrammaticality
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {det}
+小妹 買 即 衫
+sio32beo5 bue3 tsit7 sa1
+Y.sister buy this clothes
+Younger sister bought this clothing
+
+
+#13
+Source: page 363
+Vetted: f
+Judgment: g
+Phenomena: {wh}
+伊 說 啥
+i3 seo?7 sia2
+3SG say what
+What did he say?
+
+
+#14 wh-word in wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {wh}
+啥 伊 說
+sia2 i3 seo?7
+what 3SG say
+What did he say?
+
+
+#15 wh-word in wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {wh}
+伊 啥 說
+i3 sia2 seo?7
+3SG what say
+What did he say?
+
+
+#16
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {wh}
+伊 卜 說 啥
+i3 bo?7 seo?7 sia2
+3SG want say what
+What does he want to say?
+
+
+#17 wh-word in wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {wh}
+伊 卜 啥 說
+i3 bo?7 sia2 seo?7
+3SG want what say
+What does he want to say?
+
+
+#18
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {tam}
+阿爸 咧 睏
+a1pa2 le?7 khun5
+father PROG sleep
+Father is sleeping
+
+
+#19 progressive marker in wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {tam}
+阿爸 睏 咧
+a1pa2 khun5 le?7
+father sleep PROG
+Father is sleeping
+
+
+#20
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {tam}
+老師 坐 咧 商量
+lau4seu3 tseo4 le?7 sioeng1lioeng2
+teacher sit DUR discuss
+The teacher has a discussion while sitting
+
+
+#21 durative marker in wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {tam}
+老師 咧 坐 商量
+lau4seu3 le?7 tseo4 sioeng1lioeng2
+teacher DUR sit discuss
+The teacher has a discussion while sitting
+
+
+#22
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {tam}
+伊 咧 買 家俱
+i1 le?7 bue4 ka1ku5
+He HAB sell furniture
+He sells furniture (as an occupation)
+
+
+#23 habitual marker in wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {tam}
+伊 買 咧 家俱
+i1 bue4 le?7 ka1ku5
+He sell HAB furniture
+He sells furniture (as an occupation)
+
+
+#24
+Source: page 223
+Vetted: f
+Judgment: g
+Phenomena: {tam}
+我 八 去 著 北京
+gua3 pat7 kheu5 tio?8 pak7kia1
+I EXP go EXP PN
+I have been to Beijing
+
+
+#25 experiential makers in wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {tam}
+我 去 八 著 北京
+gua3 kheu5 pat7 tio?8 pak7kia1
+I go EXP EXP PN
+I have been to Beijing
+
+
+#26 experiential makers in wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {tam}
+我 八 著 去 北京
+gua3 pat7 tio?8 kheu5 pak7kia1
+I EXP EXP go PN
+I have been to Beijing
+
+
+#27 experiential markers in wrong order
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {tam}
+我 著 去 八 北京
+gua3 tio?8 kheu5 pat7 pak7kia1
+I EXP go EXP PN
+I have been to Beijing

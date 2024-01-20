@@ -1,0 +1,122 @@
+;;; -*- Mode: TDL; Coding: utf-8 -*-
+;;; Nouns
+
+sa1 := common-noun-noun-lex &
+  [ STEM < "sa1" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_clothes_n_rel" ].
+
+tshiang2 := common-noun-noun-lex &
+  [ STEM < "tshiang2" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_orange_n_rel" ].
+
+tshia1 := common-noun-noun-lex &
+  [ STEM < "tshia1" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_car_n_rel" ].
+
+a1pa2 := common-noun-noun-lex &
+  [ STEM < "a1pa2" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_father_n_rel" ].
+
+sio32beo5 := common-noun-noun-lex &
+  [ STEM < "sio32beo5" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_younger_sister_n_rel" ].
+
+lau4seu3 := common-noun-noun-lex &
+  [ STEM < "lau4seu3" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_teacher_n_rel" ].
+
+ka1ku5 := common-noun-noun-lex &
+  [ STEM < "ka1ku5" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_furniture_n_rel" ].
+
+gua3 := 1st-sg-pronoun-noun-lex &
+  [ STEM < "gua3" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+gun3 := 1st-pl-excl-pronoun-noun-lex &
+  [ STEM < "gun3" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+lan3 := 1st-pl-incl-pronoun-noun-lex &
+  [ STEM < "lan3" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+leu3 := 2nd-sg-pronoun-noun-lex &
+  [ STEM < "leu3" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+len := 2nd-pl-pronoun-noun-lex &
+  [ STEM < "len" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+i1 := 3rd-sg-pronoun-noun-lex &
+  [ STEM < "i1" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+en1 := 3rd-pl-pronoun-noun-lex &
+  [ STEM < "en1" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+pak7kia1 := proper-noun-noun-lex &
+  [ STEM < "pak7kia1" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_Beijing_n_rel" ].
+
+;;; Adjectives
+
+;;; Verbs
+
+kheu5 := intransitive-verb-verb-lex &
+  [ STEM < "kheu5" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_go_v_rel" ].
+
+tshio5 := intransitive-verb-verb-lex &
+  [ STEM < "tshio5" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_laugh_v_rel" ].
+
+khun5 := intransitive-verb-verb-lex &
+  [ STEM < "khun5" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sleep_v_rel" ].
+
+tseo4 := intransitive-verb-verb-lex &
+  [ STEM < "tseo4" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sit_v_rel" ].
+
+sioeng1lioeng2 := intransitive-verb-verb-lex &
+  [ STEM < "sioeng1lioeng2" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_discuss_v_rel" ].
+
+u4 := transitive-verb-verb-lex &
+  [ STEM < "u4" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_have_v_rel" ].
+
+tsia_3F8 := transitive-verb-verb-lex &
+  [ STEM < "tsia?8" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_eat_v_rel" ].
+
+khua5 := transitive-verb-verb-lex &
+  [ STEM < "khua5" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_see_v_rel" ].
+
+bue3 := transitive-verb-verb-lex &
+  [ STEM < "bue3" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_buy_v_rel" ].
+
+bue4 := transitive-verb-verb-lex &
+  [ STEM < "bue4" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sell_v_rel" ].
+
+seo_3F7 := transitive-verb-verb-lex &
+  [ STEM < "seo?7" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_say_v_rel" ].
+
+;;; Determiners
+
+tsit7 := demonst-det-determiner-lex &
+  [ STEM < "tsit7" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_this_q_rel" ].
+
+hit7 := demonst-det-determiner-lex &
+  [ STEM < "hit7" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_that_q_rel" ].
+
+;;; Adverbs
