@@ -1,0 +1,280 @@
+
+version=34
+
+section=general
+language=southern_min
+iso-code=nan
+punctuation-chars=keep-all
+archive=yes
+email=sehkim@uw.edu
+affiliation=UW
+motivation=Ling 567
+comment=Lab 3
+vcs=git
+
+section=word-order
+word-order=svo
+has-dets=yes
+noun-det-order=det-noun
+has-aux=yes
+aux-comp-order=after
+aux-comp=vp
+multiple-aux=no
+subord-word-order=same
+
+section=number
+  number1_name=singular
+  number2_name=plural
+
+section=person
+person=1-2-3
+first-person=incl-excl
+incl-excl-number=plural
+
+section=gender
+
+section=case
+case-marking=none
+
+section=adnom-poss
+
+section=direct-inverse
+scale-equal=direct
+
+section=tense-aspect-mood
+  aspect1_name=imperfective
+    aspect1_supertype1_name=aspect
+  aspect2_name=progressive-habitual
+    aspect2_supertype1_name=aspect
+    aspect2_supertype2_name=imperfective
+  aspect3_name=durative
+    aspect3_supertype1_name=aspect
+    aspect3_supertype2_name=imperfective
+  aspect4_name=experiential
+    aspect4_supertype1_name=aspect
+    aspect4_supertype2_name=imperfective
+
+section=evidentials
+
+section=other-features
+
+section=sentential-negation
+neg-exp=1
+neg-aux=on
+neg-aux-index=1
+
+section=coordination
+  cs1_n=on
+  cs1_np=on
+  cs1_pat=mono
+  cs1_mark=word
+  cs1_orth=交
+  cs2_vp=on
+  cs2_pat=mono
+  cs2_mark=word
+  cs2_orth=佫
+  cs3_n=on
+  cs3_np=on
+  cs3_pat=mono
+  cs3_orth=合
+  cs4_vp=on
+  cs4_pat=omni
+  cs4_orth=也
+  cs5_n=on
+  cs5_np=on
+  cs5_vp=on
+  cs5_pat=mono
+  cs5_orth=抑
+
+section=matrix-yes-no
+
+section=wh-q
+
+section=info-str
+focus-pos=preverbal
+
+section=arg-opt
+
+section=nominalclause
+
+section=clausal-comp
+
+section=clausalmods
+
+section=lexicon
+  noun1_name=common-noun
+  noun1_det=opt
+    noun1_stem1_orth=衫
+    noun1_stem1_pred=_clothes_n_rel
+    noun1_stem2_orth=橙
+    noun1_stem2_pred=_orange_n_rel
+    noun1_stem3_orth=車
+    noun1_stem3_pred=_car_n_rel
+    noun1_stem4_orth=阿爸
+    noun1_stem4_pred=_father_n_rel
+    noun1_stem5_orth=小妹
+    noun1_stem5_pred=_younger_sister_n_rel
+    noun1_stem6_orth=家俱
+    noun1_stem6_pred=_teacher_n_rel
+    noun1_stem7_orth=老師
+    noun1_stem7_pred=_furniture_n_rel
+    noun1_stem8_orth=大學生
+    noun1_stem8_pred=_university_student_n_rel
+    noun1_stem9_orth=花
+    noun1_stem9_pred=_flower_n_rel
+    noun1_stem10_orth=身體
+    noun1_stem10_pred=_body_n_rel
+    noun1_stem11_orth=糖
+    noun1_stem11_pred=_sugar_n_rel
+    noun1_stem12_orth=鹽
+    noun1_stem12_pred=_salt_n_rel
+    noun1_stem13_orth=魚
+    noun1_stem13_pred=_fish_n_rel
+    noun1_stem14_orth=屜
+    noun1_stem14_pred=_drawer_n_rel
+  noun2_name=1st-sg-pronoun
+  noun2_pron=on
+    noun2_feat1_name=pernum
+    noun2_feat1_value=1singular
+  noun2_det=imp
+    noun2_stem1_orth=我
+    noun2_stem1_pred=pron_rel
+  noun3_name=1st-pl-excl-pronoun
+  noun3_pron=on
+    noun3_feat1_name=pernum
+    noun3_feat1_value=1plural_excl
+  noun3_det=imp
+    noun3_stem1_orth=阮
+    noun3_stem1_pred=pron_rel
+  noun4_name=1st-pl-incl-pronoun
+  noun4_pron=on
+    noun4_feat1_name=pernum
+    noun4_feat1_value=1plural_incl
+  noun4_det=imp
+    noun4_stem1_orth=㑑
+    noun4_stem1_pred=pron_rel
+  noun5_name=2nd-sg-pronoun
+  noun5_pron=on
+    noun5_feat1_name=pernum
+    noun5_feat1_value=2singular
+  noun5_det=imp
+    noun5_stem1_orth=汝
+    noun5_stem1_pred=pron_rel
+  noun6_name=2nd-pl-pronoun
+  noun6_pron=on
+    noun6_feat1_name=pernum
+    noun6_feat1_value=2plural
+  noun6_det=imp
+    noun6_stem1_orth=恁
+    noun6_stem1_pred=pron_rel
+  noun7_name=3rd-sg-pronoun
+  noun7_pron=on
+    noun7_feat1_name=pernum
+    noun7_feat1_value=3singular
+  noun7_det=imp
+    noun7_stem1_orth=伊
+    noun7_stem1_pred=pron_rel
+  noun8_name=3rd-pl-pronoun
+  noun8_pron=on
+    noun8_feat1_name=pernum
+    noun8_feat1_value=3plural
+  noun8_det=imp
+    noun8_stem1_orth=姻
+    noun8_stem1_pred=pron_rel
+  noun9_name=proper-noun
+  noun9_det=imp
+    noun9_stem1_orth=pak7kia1
+    noun9_stem1_pred=_Beijing_n_rel
+  verb1_name=intransitive-verb
+  verb1_valence=intrans
+    verb1_stem1_orth=去
+    verb1_stem1_pred=_go_v_rel
+    verb1_stem2_orth=笑
+    verb1_stem2_pred=_laugh_v_rel
+    verb1_stem3_orth=睏
+    verb1_stem3_pred=_sleep_v_rel
+    verb1_stem4_orth=坐
+    verb1_stem4_pred=_sit_v_rel
+    verb1_stem5_orth=商量
+    verb1_stem5_pred=_discuss_v_rel
+    verb1_stem6_orth=同意
+    verb1_stem6_pred=_agree_v_rel
+    verb1_stem7_orth=走
+    verb1_stem7_pred=_run_v_rel
+    verb1_stem8_orth=跳
+    verb1_stem8_pred=_jump_v_rel
+    verb1_stem9_orth=來
+    verb1_stem9_pred=_come_v_rel
+  verb2_name=transitive-verb
+  verb2_valence=trans
+    verb2_stem1_orth=有
+    verb2_stem1_pred=_have_v_rel
+    verb2_stem2_orth=食
+    verb2_stem2_pred=_eat_v_rel
+    verb2_stem3_orth=看
+    verb2_stem3_pred=_see_v_rel
+    verb2_stem4_orth=買
+    verb2_stem4_pred=_buy_v_rel
+    verb2_stem5_orth=賣
+    verb2_stem5_pred=_sell_v_rel
+    verb2_stem6_orth=說
+    verb2_stem6_pred=_say_v_rel
+    verb2_stem7_orth=別
+    verb2_stem7_pred=_know_v_rel
+    verb2_stem8_orth=愛
+    verb2_stem8_pred=_like_v_rel
+    verb2_stem9_orth=抹
+    verb2_stem9_pred=_smear_v_rel
+  adj1_name=adjective
+  adj1_mod=both
+  adj1_modpos=after
+  adj1_predcop=obl
+    adj1_stem1_orth=好
+    adj1_stem1_pred=_good_a_rel
+    adj1_stem2_orth=大
+    adj1_stem2_pred=_big_a_rel
+    adj1_stem3_orth=新
+    adj1_stem3_pred=_new_a_rel
+    adj1_stem4_orth=水
+    adj1_stem4_pred=_pretty_a_rel
+  aux1_name=neg
+  aux1_sem=add-pred
+  aux1_subj=np
+    aux1_stem1_orth=呣
+    aux1_stem1_pred=neg_rel
+    aux1_stem2_orth=無
+    aux1_stem2_pred=neg_rel
+  aux2_name=imperfective-aux
+  aux2_sem=add-pred
+  aux2_subj=np
+    aux2_stem1_orth=咧
+    aux2_stem1_pred=_progressive_habitual_v_rel
+    aux2_stem2_orth=咧
+    aux2_stem2_pred=_durative_v_rel
+    aux2_stem3_orth=著八
+    aux2_stem3_pred=_experiential_v_rel
+  aux3_name=regular-aux
+  aux3_sem=add-pred
+  aux3_subj=np
+    aux3_stem1_orth=卜
+    aux3_stem1_pred=_want_v_rel
+  cop1_name=copula
+  cop1_comptype=ap
+    cop1_stem1_orth=是
+  cop2_name=locative-copula
+    cop2_stem1_orth=伫
+  det1_name=demonst-det
+    det1_stem1_orth=即
+    det1_stem1_pred=_this_q_rel
+    det1_stem2_orth=迄
+    det1_stem2_pred=_that_q_rel
+
+section=morphology
+
+section=toolbox-import
+
+section=test-sentences
+
+section=gen-options
+
+section=ToolboxLexicon
