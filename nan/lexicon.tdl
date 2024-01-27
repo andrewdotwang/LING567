@@ -1,0 +1,257 @@
+;;; -*- Mode: TDL; Coding: utf-8 -*-
+;;; Nouns
+
+衫 := common-noun-noun-lex &
+  [ STEM < "衫" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_clothes_n_rel" ].
+
+橙 := common-noun-noun-lex &
+  [ STEM < "橙" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_orange_n_rel" ].
+
+車 := common-noun-noun-lex &
+  [ STEM < "車" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_car_n_rel" ].
+
+阿爸 := common-noun-noun-lex &
+  [ STEM < "阿爸" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_father_n_rel" ].
+
+小妹 := common-noun-noun-lex &
+  [ STEM < "小妹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_younger_sister_n_rel" ].
+
+家俱 := common-noun-noun-lex &
+  [ STEM < "家俱" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_teacher_n_rel" ].
+
+老師 := common-noun-noun-lex &
+  [ STEM < "老師" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_furniture_n_rel" ].
+
+大學生 := common-noun-noun-lex &
+  [ STEM < "大學生" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_university_student_n_rel" ].
+
+花 := common-noun-noun-lex &
+  [ STEM < "花" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_flower_n_rel" ].
+
+身體 := common-noun-noun-lex &
+  [ STEM < "身體" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_body_n_rel" ].
+
+糖 := common-noun-noun-lex &
+  [ STEM < "糖" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sugar_n_rel" ].
+
+鹽 := common-noun-noun-lex &
+  [ STEM < "鹽" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_salt_n_rel" ].
+
+魚 := common-noun-noun-lex &
+  [ STEM < "魚" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_fish_n_rel" ].
+
+屜 := common-noun-noun-lex &
+  [ STEM < "屜" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_drawer_n_rel" ].
+
+我 := 1st-sg-pronoun-noun-lex &
+  [ STEM < "我" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+阮 := 1st-pl-excl-pronoun-noun-lex &
+  [ STEM < "阮" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+㑑 := 1st-pl-incl-pronoun-noun-lex &
+  [ STEM < "㑑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+汝 := 2nd-sg-pronoun-noun-lex &
+  [ STEM < "汝" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+恁 := 2nd-pl-pronoun-noun-lex &
+  [ STEM < "恁" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+伊 := 3rd-sg-pronoun-noun-lex &
+  [ STEM < "伊" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+姻 := 3rd-pl-pronoun-noun-lex &
+  [ STEM < "姻" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+pak7kia1 := proper-noun-noun-lex &
+  [ STEM < "pak7kia1" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_Beijing_n_rel" ].
+
+;;; Adjectives
+
+好 := adjective-adj-lex &
+  [ STEM < "好" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_good_a_rel" ].
+
+大 := adjective-adj-lex &
+  [ STEM < "大" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_big_a_rel" ].
+
+新 := adjective-adj-lex &
+  [ STEM < "新" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_new_a_rel" ].
+
+水 := adjective-adj-lex &
+  [ STEM < "水" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_pretty_a_rel" ].
+
+;;; Verbs
+
+去 := intransitive-verb-verb-lex &
+  [ STEM < "去" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_go_v_rel" ].
+
+笑 := intransitive-verb-verb-lex &
+  [ STEM < "笑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_laugh_v_rel" ].
+
+睏 := intransitive-verb-verb-lex &
+  [ STEM < "睏" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sleep_v_rel" ].
+
+坐 := intransitive-verb-verb-lex &
+  [ STEM < "坐" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sit_v_rel" ].
+
+商量 := intransitive-verb-verb-lex &
+  [ STEM < "商量" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_discuss_v_rel" ].
+
+同意 := intransitive-verb-verb-lex &
+  [ STEM < "同意" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_agree_v_rel" ].
+
+走 := intransitive-verb-verb-lex &
+  [ STEM < "走" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_run_v_rel" ].
+
+跳 := intransitive-verb-verb-lex &
+  [ STEM < "跳" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_jump_v_rel" ].
+
+來 := intransitive-verb-verb-lex &
+  [ STEM < "來" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_come_v_rel" ].
+
+有 := transitive-verb-verb-lex &
+  [ STEM < "有" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_have_v_rel" ].
+
+食 := transitive-verb-verb-lex &
+  [ STEM < "食" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_eat_v_rel" ].
+
+看 := transitive-verb-verb-lex &
+  [ STEM < "看" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_see_v_rel" ].
+
+買 := transitive-verb-verb-lex &
+  [ STEM < "買" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_buy_v_rel" ].
+
+賣 := transitive-verb-verb-lex &
+  [ STEM < "賣" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sell_v_rel" ].
+
+說 := transitive-verb-verb-lex &
+  [ STEM < "說" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_say_v_rel" ].
+
+別 := transitive-verb-verb-lex &
+  [ STEM < "別" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_know_v_rel" ].
+
+愛 := transitive-verb-verb-lex &
+  [ STEM < "愛" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_like_v_rel" ].
+
+抹 := transitive-verb-verb-lex &
+  [ STEM < "抹" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_smear_v_rel" ].
+
+;;; Auxiliaries
+
+呣 := neg-aux-lex &
+  [ STEM < "呣" >,
+    SYNSEM.LKEYS.KEYREL.PRED "neg_rel" ].
+
+無 := neg-aux-lex &
+  [ STEM < "無" >,
+    SYNSEM.LKEYS.KEYREL.PRED "neg_rel" ].
+
+咧_1 := imperfective-aux-aux-lex &
+  [ STEM < "咧" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_progressive_habitual_v_rel" ].
+
+咧_2 := imperfective-aux-aux-lex &
+  [ STEM < "咧" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_durative_v_rel" ].
+
+著八 := imperfective-aux-aux-lex &
+  [ STEM < "著八" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_experiential_v_rel" ].
+
+卜 := regular-aux-aux-lex &
+  [ STEM < "卜" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_want_v_rel" ].
+
+;;; Copulas
+
+是 := copula-cop-lex &
+  [ STEM < "是" > ].
+
+伫 := locative-copula-cop-lex &
+  [ STEM < "伫" > ].
+
+;;; Determiners
+
+即 := demonst-det-determiner-lex &
+  [ STEM < "即" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_this_q_rel" ].
+
+迄 := demonst-det-determiner-lex &
+  [ STEM < "迄" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_that_q_rel" ].
+
+;;; Adverbs
+
+交1 := conj-lex &
+  [ STEM < "交" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_and_coord_rel",
+    CFORM "1" ].
+
+佫2 := conj-lex &
+  [ STEM < "佫" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_and_coord_rel",
+    CFORM "2" ].
+
+合3 := conj-lex &
+  [ STEM < "合" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_and_coord_rel",
+    CFORM "3" ].
+
+也4 := conj-lex &
+  [ STEM < "也" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_and_coord_rel",
+    CFORM "4" ].
+
+也4_nosem := nosem-conj-lex &
+  [ STEM < "也" >,
+    CFORM "4" ].
+
+抑5 := conj-lex &
+  [ STEM < "抑" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_and_coord_rel",
+    CFORM "5" ].
