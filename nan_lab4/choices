@@ -37,6 +37,14 @@ section=case
 case-marking=none
 
 section=adnom-poss
+  poss-strat1_order=head-final
+  poss-strat1_mod-spec=spec
+  poss-strat1_mark-loc=possessor
+  poss-strat1_pronoun-allow=yes
+  poss-strat1_possessor-type=non-affix
+  poss-strat1_possessor-mark-order=head-final
+  poss-strat1_possessor-agr=non-agree
+  poss-strat1_possessor-orth=其
 
 section=direct-inverse
 scale-equal=direct
@@ -93,6 +101,11 @@ section=coordination
   cs5_order=before
 
 section=matrix-yes-no
+q-part=on
+q-part-order=after
+  q-particle1_orth=啊
+  q-particle1_main=on
+  q-particle1_wh=imp
 
 section=wh-q
 
@@ -100,12 +113,38 @@ section=info-str
 focus-pos=preverbal
 
 section=arg-opt
+subj-drop=subj-drop-all
+subj-mark-drop=subj-mark-drop-not
+subj-mark-no-drop=subj-mark-no-drop-not
+subj-con=subj-con-always
+obj-drop=obj-drop-all
+obj-mark-drop=obj-mark-drop-not
+obj-mark-no-drop=obj-mark-no-drop-not
 
 section=nominalclause
 
 section=clausal-comp
+  comps1_clause-pos-same=on
+  comps1_ques=prop
+  comps1_comp-pos-before=on
+  comps1_comp=opt
+    comps1_stem1_orth=看
+    comps1_feat1_name=form
+    comps1_feat1_value=finite
 
 section=clausalmods
+  cms1_position=before
+  cms1_modifier-attach=s
+  cms1_subordinator=free
+  cms1_subposition=before
+  cms1_subordinator-type=adverb
+  cms1_adverb-attach=s
+    cms1_freemorph1_orth=所以
+    cms1_freemorph1_pred=_so_subord_rel
+  cms2_position=before
+  cms2_modifier-attach=s
+  cms2_subordinator=none
+  cms2_pred=_time_subord_rel
 
 section=lexicon
   noun1_name=common-noun
@@ -223,14 +262,20 @@ section=lexicon
     verb2_stem4_pred=_buy_v_rel
     verb2_stem5_orth=賣
     verb2_stem5_pred=_sell_v_rel
-    verb2_stem6_orth=說
-    verb2_stem6_pred=_say_v_rel
     verb2_stem7_orth=別
     verb2_stem7_pred=_know_v_rel
     verb2_stem8_orth=愛
     verb2_stem8_pred=_like_v_rel
     verb2_stem9_orth=抹
     verb2_stem9_pred=_smear_v_rel
+    verb2_stem10_orth=說
+    verb2_stem10_pred=_say_v_rel
+  verb3_name=transitive-clausal-comps-verb
+  verb3_valence=trans,comps1
+    verb3_stem1_orth=想
+    verb3_stem1_pred=_think_v_rel
+    verb3_stem2_orth=說
+    verb3_stem2_pred=_say_v_rel
   adj1_name=adjective
   adj1_mod=both
   adj1_modpos=after

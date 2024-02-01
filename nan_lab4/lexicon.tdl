@@ -153,7 +153,7 @@ pak7kia1 := proper-noun-noun-lex &
   [ STEM < "食" >,
     SYNSEM.LKEYS.KEYREL.PRED "_eat_v_rel" ].
 
-看 := transitive-verb-verb-lex &
+看_1 := transitive-verb-verb-lex &
   [ STEM < "看" >,
     SYNSEM.LKEYS.KEYREL.PRED "_see_v_rel" ].
 
@@ -164,10 +164,6 @@ pak7kia1 := proper-noun-noun-lex &
 賣 := transitive-verb-verb-lex &
   [ STEM < "賣" >,
     SYNSEM.LKEYS.KEYREL.PRED "_sell_v_rel" ].
-
-說 := transitive-verb-verb-lex &
-  [ STEM < "說" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_say_v_rel" ].
 
 別 := transitive-verb-verb-lex &
   [ STEM < "別" >,
@@ -180,6 +176,18 @@ pak7kia1 := proper-noun-noun-lex &
 抹 := transitive-verb-verb-lex &
   [ STEM < "抹" >,
     SYNSEM.LKEYS.KEYREL.PRED "_smear_v_rel" ].
+
+說_1 := transitive-verb-verb-lex &
+  [ STEM < "說" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_say_v_rel" ].
+
+想 := transitive-clausal-comps-verb-verb-lex &
+  [ STEM < "想" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_think_v_rel" ].
+
+說_2 := transitive-clausal-comps-verb-verb-lex &
+  [ STEM < "說" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_say_v_rel" ].
 
 ;;; Auxiliaries
 
@@ -221,6 +229,12 @@ pak7kia1 := proper-noun-noun-lex &
 
 ;;; Adverbs
 
+啊 := q-particle1-lex &
+  [ STEM < "啊" > ].
+
+possessor-adp-1 := possessor-adp-lex-1 &
+  [ STEM < "其" > ].
+
 交1 := conj-lex &
   [ STEM < "交" >,
     SYNSEM.LKEYS.KEYREL.PRED "_and_coord_rel",
@@ -249,3 +263,11 @@ pak7kia1 := proper-noun-noun-lex &
   [ STEM < "抑" >,
     SYNSEM.LKEYS.KEYREL.PRED "_and_coord_rel",
     CFORM "5" ].
+
+所以 := prehead-so-clause-init-adv-subord-lex-item &
+  [ STEM < "所以" > ].
+
+;;; Complementizers
+
+看_2 := comps1-complementizer-lex-item &
+  [ STEM < "看" > ].
