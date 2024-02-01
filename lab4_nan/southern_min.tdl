@@ -2,7 +2,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grammar of southern_min
 ;;; created at:
-;;;     Thu Feb 01 05:28:18 UTC 2024
+;;;     Thu Feb 01 05:36:00 UTC 2024
 ;;; based on Matrix customization system version of:
 ;;;     Fri 27 Oct 2023 04:16:13 PM UTC
 ;;;
@@ -79,9 +79,9 @@ finite := form.
 ;;; Aspect
 
 imperfective := aspect.
-progressive-habitual := aspect & imperfective.
-durative := aspect & imperfective.
-experiential := aspect & imperfective.
+progressive-habitual := imperfective.
+durative := imperfective.
+experiential := imperfective.
 
 ;;;;;;;;;;;;;;;;;;;
 ;;; Lexical Types

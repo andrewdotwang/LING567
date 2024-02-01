@@ -64,9 +64,6 @@ E.ASPECT : E.ASPECT
   durative <> durative
   experiential <> experiential
   imperfective <> imperfective
-  progressive-habitual <> progressive-habitual
-  durative <> durative
-  experiential <> experiential
   * <> *
 
 E.MOOD : E.MOOD

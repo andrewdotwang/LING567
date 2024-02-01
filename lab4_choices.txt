@@ -45,13 +45,10 @@ section=tense-aspect-mood
   aspect1_name=imperfective
     aspect1_supertype1_name=aspect
   aspect2_name=progressive-habitual
-    aspect2_supertype1_name=aspect
     aspect2_supertype2_name=imperfective
   aspect3_name=durative
-    aspect3_supertype1_name=aspect
     aspect3_supertype2_name=imperfective
   aspect4_name=experiential
-    aspect4_supertype1_name=aspect
     aspect4_supertype2_name=imperfective
 
 section=evidentials
