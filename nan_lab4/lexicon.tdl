@@ -181,6 +181,10 @@ pak7kia1 := proper-noun-noun-lex &
   [ STEM < "說" >,
     SYNSEM.LKEYS.KEYREL.PRED "_say_v_rel" ].
 
+無_1 := transitive-verb-verb-lex &
+  [ STEM < "無" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_not_have_v_rel" ].
+
 想 := transitive-clausal-comps-verb-verb-lex &
   [ STEM < "想" >,
     SYNSEM.LKEYS.KEYREL.PRED "_think_v_rel" ].
@@ -193,10 +197,6 @@ pak7kia1 := proper-noun-noun-lex &
 
 呣 := neg-aux-lex &
   [ STEM < "呣" >,
-    SYNSEM.LKEYS.KEYREL.PRED "neg_rel" ].
-
-無 := neg-aux-lex &
-  [ STEM < "無" >,
     SYNSEM.LKEYS.KEYREL.PRED "neg_rel" ].
 
 咧 := imperfective-aux-aux-lex &
@@ -228,6 +228,10 @@ pak7kia1 := proper-noun-noun-lex &
     SYNSEM.LKEYS.KEYREL.PRED "_that_q_rel" ].
 
 ;;; Adverbs
+
+無_2 := neg-adv-adverb-lex &
+  [ STEM < "無" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_not_a_rel" ].
 
 啊 := q-particle1-lex &
   [ STEM < "啊" > ].
@@ -266,6 +270,9 @@ possessor-adp-1 := possessor-adp-lex-1 &
 
 所以 := prehead-so-clause-init-adv-subord-lex-item &
   [ STEM < "所以" > ].
+
+就 := prehead-then-clause-final-adv-subord-lex-item &
+  [ STEM < "就" > ].
 
 ;;; Complementizers
 

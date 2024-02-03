@@ -2,7 +2,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grammar of southern_min
 ;;; created at:
-;;;     Thu Feb 01 06:32:50 UTC 2024
+;;;     Sat Feb 03 04:22:55 UTC 2024
 ;;; based on Matrix customization system version of:
 ;;;     Fri 27 Oct 2023 04:16:13 PM UTC
 ;;;
@@ -132,6 +132,12 @@ cont-change-only-lex-rule :+ same-subordinated-lex-rule.
 cat-change-with-ccont-lex-rule :+ same-subordinated-lex-rule.
 
 add-only-rule :+ same-subordinated-lex-rule.
+
+then := xsubord.
+
+adj-head-int-phrase :+ [ HEAD-DTR.SYNSEM.NON-LOCAL.SLASH.LIST < > ].
+
+head-adj-int-phrase :+ [ NON-HEAD-DTR.SYNSEM.NON-LOCAL.QUE.LIST < > ].
 
 ;;;;;;;;;;;;;;
 ;;; Features
@@ -438,6 +444,19 @@ so-modifying-clause-phrase := adv-marked-subord-clause-phrase &
     SYNSEM.LOCAL.CAT [ POSTHEAD -,
                        HEAD.MOD < [ LOCAL.CAT.VAL.SUBJ < > ] > ] ].
 
+prehead-then-clause-final-adv-subord-lex-item := adverb-subord-lex-item &
+  [ SYNSEM [ SUBORDINATED then,
+             LOCAL.CAT [ HEAD.MOD < [ LOCAL.CAT.VAL [ SUBJ < >,
+                                                      COMPS < > ] ] >,
+                         POSTHEAD + ] ] ].
+
+then-modifying-clause-phrase := adv-marked-subord-clause-phrase &
+  [ C-CONT.RELS.LIST < [ PRED "_then_subord_rel" ] >,
+    ARGS < [ SYNSEM [ SUBORDINATED then,
+                      LOCAL.CAT.VAL.SUBJ < > ] ] >,
+    SYNSEM.LOCAL.CAT [ POSTHEAD -,
+                       HEAD.MOD < [ LOCAL.CAT.VAL.SUBJ < > ] > ] ].
+
 ;;; Complementizers
 
 ; We treat question particles as complementizers.
@@ -489,6 +508,42 @@ demonst-det-determiner-lex := determiner-lex & no-icons-lex-item &
   [ SYNSEM.L-QUE - ].
 
 ;;; Adverbs
+
+adverb-lex-item := nonscop-adverb-lex &
+  [ SYNSEM [ LOCAL [ CAT [ VAL [ SUBJ < >,
+                                 SPEC < >,
+                                 SPR < >,
+                                 COMPS < > ],
+                           HEAD adv &
+                                [ MOD < [ LOCAL [ CAT.HEAD verb,
+                                                  CONT.HOOK [ CLAUSE-KEY #clause,
+                                                              LTOP #ltop ] ] ] > ] ],
+                     CONT [ RELS.LIST < [ LBL #ltop,
+                                          ARG0 event,
+                                          ARG1 #clause,
+                                          ARG2 #ind ],
+                                        [ PRED #pred,
+                                          ARG0 #ind,
+                                          LBL #larg ],
+                                        [ ARG0 #ind,
+                                          RSTR #harg ] >,
+                            HOOK.LTOP #ltop,
+                            HCONS.LIST < qeq &
+                                         [ HARG #harg,
+                                           LARG #larg ] > ] ],
+             LKEYS.KEYREL [ PRED #pred,
+                            ARG0 ref-ind & #ind,
+                            LBL #ltop ] ] ].
+
+manner-adverb-lex-item := adverb-lex-item &
+  [ SYNSEM.LOCAL.CONT.RELS.LIST.FIRST.PRED "manner_nonsp_rel" ].
+
+adverb-lex := basic-non-wh-word-lex & adverb-lex-item & norm-zero-arg &
+  [ SYNSEM.LOCAL.CONT.RELS.LIST < [ ],
+                                  [ ],
+                                  [ PRED "exist_q_rel" ] > ].
+
+neg-adv-adverb-lex := manner-adverb-lex-item & adverb-lex.
 
 two-rel-adposition-lex := basic-icons-lex-item &
   [ SYNSEM [ LOCAL [ CAT [ HEAD adp,
@@ -635,45 +690,12 @@ poss-unary-phrase := basic-unary-phrase &
 ; introduced to match the semantic effect of bare NPs in your language.
 
 bare-np-phrase := basic-bare-np-phrase &
-  [ C-CONT.RELS.LIST < [ PRED "exist_q_rel" ] > ].
+  [ C-CONT.RELS.LIST < [ PRED "exist_q_rel" ] >,
+    SYNSEM.LIGHT - ].
 
-morphological-subord-clause-phrase := unary-phrase & unary-nonloc-phrase &
-  [ SYNSEM.LOCAL [ CAT [ MC -,
-                         VAL [ SUBJ #subj,
-                               SPR < >,
-                               SPEC < >,
-                               COMPS < > ],
-                         HEAD adp &
-                              [ MOD < [ LOCAL scopal-mod &
-                                              [ CAT [ HEAD verb,
-                                                      VAL [ SPR < >,
-                                                            COMPS < > ] ],
-                                                CONT.HOOK [ LTOP #mcl,
-                                                            INDEX #index ] ] ] > ] ],
-                   COORD - ],
-    C-CONT [ RELS.LIST < [ ARG1 #mch,
-                           ARG2 #sch ] >,
-             HCONS.LIST < qeq &
-                          [ HARG #mch,
-                            LARG #mcl ],
-                          qeq &
-                          [ HARG #sch,
-                            LARG #scl ] >,
-             ICONS.LIST < >,
-             HOOK.INDEX #index ],
-    ARGS < [ SYNSEM.LOCAL [ CAT [ HEAD verb,
-                                  MC na-or-+,
-                                  VAL [ SUBJ #subj,
-                                        SPR < >,
-                                        COMPS < > ] ],
-                            CONT.HOOK.LTOP #scl,
-                            COORD - ] ] > ].
+;;; Head Adjunct rules
 
-s-attach-prehead-modifying-clause-phrase := morphological-subord-clause-phrase &
-  [ ARGS < [ SYNSEM.LOCAL.CAT.VAL.SUBJ < > ] >,
-    SYNSEM.LOCAL.CAT [ HEAD.MOD < [ LOCAL.CAT.VAL.SUBJ < > ] >,
-                       POSTHEAD - ],
-    C-CONT.RELS.LIST < [ PRED "_time_subord_rel" ] > ].
+; For intersective adjuncts with underspecified attachment locations:
 
 basic-filler-phrase :+ [ SYNSEM.NON-LOCAL.SLASH.LIST < >,
     ARGS < [ SYNSEM [ LOCAL #slash,
@@ -688,6 +710,15 @@ extracted-subj-phrase := basic-extracted-subj-phrase &
 ;;;;;;;;;;;;;;;;;;
 ;;; Coordination
 ;;;;;;;;;;;;;;;;;;
+
+adv1-top-coord-rule := basic-adv-top-coord-rule & monopoly-top-coord-rule &
+  [ SYNSEM.LOCAL.COORD-STRAT "1" ].
+
+adv1-mid-coord-rule := basic-adv-mid-coord-rule & monopoly-mid-coord-rule &
+  [ SYNSEM.LOCAL.COORD-STRAT "1" ].
+
+adv1-bottom-coord-rule := conj-first-bottom-coord-rule & adv-bottom-coord-phrase &
+  [ SYNSEM.LOCAL.COORD-STRAT "1" ].
 
 ;;; Coordination Strategy 1
 
@@ -790,3 +821,12 @@ vp5-mid-coord-rule := basic-vp-mid-coord-rule & monopoly-mid-coord-rule &
 
 vp5-bottom-coord-rule := conj-first-bottom-coord-rule & vp-bottom-coord-phrase &
   [ SYNSEM.LOCAL.COORD-STRAT "5" ].
+
+;;; Coordination Strategy 6
+
+vp6-top-coord-rule := basic-vp-top-coord-rule & apoly-top-coord-rule &
+  [ SYNSEM.LOCAL.COORD-STRAT "6" ].
+
+vp6-bottom-coord-rule := unary-bottom-coord-rule & vp-bottom-coord-phrase &
+  [ SYNSEM.LOCAL [ COORD-STRAT "6",
+                   COORD-REL.PRED "_and_coord_rel" ] ].

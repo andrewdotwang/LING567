@@ -16,3 +16,7 @@
 所以_gr := arg0e_gtr &
   [ CONTEXT.RELS.LIST < [ PRED "_so_subord_rel" ] >,
     FLAGS.TRIGGER "所以" ].
+
+就_gr := arg0e_gtr &
+  [ CONTEXT.RELS.LIST < [ PRED "_then_subord_rel" ] >,
+    FLAGS.TRIGGER "就" ].

@@ -21,6 +21,12 @@ head-spec := head-spec-phrase.
 
 bare-np := bare-np-phrase.
 
+adv1-bottom-coord := adv1-bottom-coord-rule.
+
+adv1-mid-coord := adv1-mid-coord-rule.
+
+adv1-top-coord := adv1-top-coord-rule.
+
 n1-top-coord := n1-top-coord-rule.
 
 n1-mid-coord := n1-mid-coord-rule.
@@ -77,10 +83,18 @@ vp5-mid-coord := vp5-mid-coord-rule.
 
 vp5-bottom-coord := vp5-bottom-coord-rule.
 
+vp6-top-coord := vp6-top-coord-rule.
+
+vp6-bottom-coord := vp6-bottom-coord-rule.
+
 adj-head-scop := adj-head-scop-phrase.
 
 adj-head-int := adj-head-int-phrase.
 
 so-modifying-clause := so-modifying-clause-phrase.
 
-s-attach-prehead-modifying-clause-phrase := s-attach-prehead-modifying-clause-phrase.
+head-adj-int := head-adj-int-phrase.
+
+then-modifying-clause := then-modifying-clause-phrase.
+
+head-adj := head-adj-int-phrase.
