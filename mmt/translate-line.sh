@@ -27,7 +27,7 @@ echo $SENTENCE | $ace -g grammars/$SOURCE/$SOURCE.dat | $ace -g tm/$TARGET/$TARG
 #echo $SENTENCE | $ace -g grammars/$SOURCE/$SOURCE.dat 2>/dev/null | $ace -g tm/$TARGET/$TARGET.dat 2>/dev/null | more
 
 #Look at transfer output & errors
-#echo $SENTENCE | $ace -g grammars/$SOURCE/$SOURCE.dat 2>/dev/null | $ace -g tm/$TARGET/$TARGET.dat | more
+echo $SENTENCE | $ace -g grammars/$SOURCE/$SOURCE.dat 2>/dev/null | $ace -g tm/$TARGET/$TARGET.dat | more
 
 
 #Look at parser output
