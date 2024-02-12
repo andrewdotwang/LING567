@@ -57,6 +57,18 @@
   [ STEM < "屜" >,
     SYNSEM.LKEYS.KEYREL.PRED "_drawer_n_rel" ].
 
+狗 := common-noun-noun-lex &
+  [ STEM < "狗" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_dog_n_rel" ].
+
+貓 := common-noun-noun-lex &
+  [ STEM < "貓" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_cat_n_rel" ].
+
+公園 := common-noun-noun-lex &
+  [ STEM < "公園" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_park_n_rel" ].
+
 我 := 1st-sg-pronoun-noun-lex &
   [ STEM < "我" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
@@ -110,6 +122,10 @@ pak7kia1 := proper-noun-noun-lex &
 芳 := adjective-adj-lex &
   [ STEM < "芳" >,
     SYNSEM.LKEYS.KEYREL.PRED "_fragrant_a_rel" ].
+
+枵 := adjective-adj-lex &
+  [ STEM < "枵" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_hungry_a_rel" ].
 
 ;;; Verbs
 
@@ -185,6 +201,10 @@ pak7kia1 := proper-noun-noun-lex &
   [ STEM < "無" >,
     SYNSEM.LKEYS.KEYREL.PRED "_not_have_v_rel" ].
 
+追 := transitive-verb-verb-lex &
+  [ STEM < "追" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_chase_v_rel" ].
+
 想 := transitive-decl-clausal-comps-verb-verb-lex &
   [ STEM < "想" >,
     SYNSEM.LKEYS.KEYREL.PRED "_think_v_rel" ].
@@ -192,6 +212,10 @@ pak7kia1 := proper-noun-noun-lex &
 說 := transitive-decl-clausal-comps-verb-verb-lex &
   [ STEM < "說" >,
     SYNSEM.LKEYS.KEYREL.PRED "_say_v_rel" ].
+
+知 := transitive-decl-clausal-comps-verb-verb-lex &
+  [ STEM < "知" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_know_clausal_v_rel" ].
 
 問 := transitive-interrog-clausal-comps-verb-verb-lex &
   [ STEM < "問" >,
