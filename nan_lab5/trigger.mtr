@@ -1,0 +1,22 @@
+;;; -*- Mode: TDL; Coding: utf-8 -*-
+;;; Semantically Empty Lexical Entries
+
+咧_gr := arg0e_gtr &
+  [ CONTEXT.RELS.LIST < [ PRED "non_existing_rel" ] >,
+    FLAGS.TRIGGER "咧" ].
+
+著八_gr := arg0e_gtr &
+  [ CONTEXT.RELS.LIST < [ PRED "non_existing_rel" ] >,
+    FLAGS.TRIGGER "著八" ].
+
+啊_gr := generator_rule &
+  [ CONTEXT.RELS.LIST < [ ARG0.SF ques ] >,
+    FLAGS.TRIGGER "啊" ].
+
+所以_gr := arg0e_gtr &
+  [ CONTEXT.RELS.LIST < [ PRED "_so_subord_rel" ] >,
+    FLAGS.TRIGGER "所以" ].
+
+就_gr := arg0e_gtr &
+  [ CONTEXT.RELS.LIST < [ PRED "_then_subord_rel" ] >,
+    FLAGS.TRIGGER "就" ].

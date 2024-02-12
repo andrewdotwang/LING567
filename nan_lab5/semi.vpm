@@ -1,0 +1,70 @@
+;;; -*- Mode: TDL; Coding: utf-8 -*-
+; A basic VPM for Matrix grammars.
+event          <> e
+ref-ind        <> x
+individual     <> i
+handle         <> h
+non_event      <> p
+*              >> u
+semarg         << u
+
+SPECI : SPECI
+  * <> *
+
+SF : SF
+  prop <> prop
+  ques <> ques
+  prop-or-ques >> prop-or-ques
+  prop << prop-or-ques
+  comm <> comm
+  * <> *
+
+COG-ST : COG-ST
+  type-id <> type-id
+  uniq-id <> uniq-id
+  familiar <> familiar
+  activated <> activated
+  in-foc <> in-foc
+  activ+fam <> activ+fam
+  uniq+fam <> uniq+fam
+  activ-or-more <> activ-or-more
+  uniq-or-less <> uniq-or-less
+  uniq+fam+act <> uniq+fam+act
+  fam-or-more <> fam-or-more
+  fam-or-less <> fam-or-less
+  uniq-or-more <> uniq-or-more
+  activ-or-less <> activ-or-less
+  * <> *
+
+
+PNG.PERNUM : PNG.PERNUM
+  3plural <> 3plural
+  2plural <> 2plural
+  1plural_excl <> 1plural_excl
+  1plural_incl <> 1plural_incl
+  1plural <> 1plural
+  3singular <> 3singular
+  2singular <> 2singular
+  1singular <> 1singular
+  3rd <> 3rd
+  2nd <> 2nd
+  1st <> 1st
+  plural <> plural
+  singular <> singular
+  * <> *
+
+PNG.GEND : PNG.GEND
+  * <> *
+
+E.TENSE : E.TENSE
+  * <> *
+
+E.ASPECT : E.ASPECT
+  progressive-habitual <> progressive-habitual
+  durative <> durative
+  experiential <> experiential
+  imperfective <> imperfective
+  * <> *
+
+E.MOOD : E.MOOD
+  * <> *
