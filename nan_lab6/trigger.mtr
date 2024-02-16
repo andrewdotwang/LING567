@@ -20,13 +20,3 @@
 就_gr := arg0e_gtr &
   [ CONTEXT.RELS.LIST < [ PRED "_then_subord_rel" ] >,
     FLAGS.TRIGGER "就" ].
-
-看_gtr := generator_rule &
-  [ CONTEXT [ RELS <! [ ARG0 #e & [ SF prop ]] !> ],
-    FLAGS [ EQUAL < #e >,
-            TRIGGER "看" ]].
-
-若_gtr := generator_rule &
-  [ CONTEXT [ RELS <! [ ARG0 #e & [ SF prop ]] !> ],
-    FLAGS [ EQUAL < #e >,
-            TRIGGER "若" ]].
