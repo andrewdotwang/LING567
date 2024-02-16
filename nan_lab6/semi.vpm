@@ -38,24 +38,24 @@ COG-ST : COG-ST
 
 
 PNG.PERNUM : PERS NUM
-  3plural <> third plural
-  2plural <> second plural
-  1plural_excl >> first plural
-  1plural_incl >> first plural
-  1plural <> first plural
-  3singular <> third singular
-  2singular <> second singular
-  1singular <> first singular
+  3plural <> third pl
+  2plural <> second pl
+  1plural_excl >> first pl
+  1plural_incl >> first pl
+  1plural <> first pl
+  3singular <> third sg
+  2singular <> second sg
+  1singular <> first sg
   3rd <> third !
   3rd << third *
   2nd <> second !
   2nd << second *
   1st <> first !
   1st << first *
-  plural <> ! plural
-  plural << * plural
-  singular <> ! singular
-  singular << * singular
+  plural <> ! pl
+  plural << * pl
+  singular <> ! sg
+  singular << * sg
   * <> ! !
 
 E.TENSE : TENSE
