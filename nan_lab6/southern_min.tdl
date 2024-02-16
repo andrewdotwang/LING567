@@ -179,6 +179,7 @@ imperfective := aspect.
 progressive-habitual := imperfective.
 durative := imperfective.
 experiential := imperfective.
+no-aspect := aspect.
 
 ;;;;;;;;;;;;;;;;;;;
 ;;; Lexical Types

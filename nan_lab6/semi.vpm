@@ -37,34 +37,40 @@ COG-ST : COG-ST
   * <> *
 
 
-PNG.PERNUM : PNG.PERNUM
-  3plural <> 3plural
-  2plural <> 2plural
-  1plural_excl <> 1plural_excl
-  1plural_incl <> 1plural_incl
-  1plural <> 1plural
-  3singular <> 3singular
-  2singular <> 2singular
-  1singular <> 1singular
-  3rd <> 3rd
-  2nd <> 2nd
-  1st <> 1st
-  plural <> plural
-  singular <> singular
-  * <> *
+PNG.PERNUM : PERS NUM
+  3plural <> third plural
+  2plural <> second plural
+  1plural_excl <> first plural_excl
+  1plural_incl <> first plural_incl
+  1plural <> first plural
+  3singular <> third singular
+  2singular <> second singular
+  1singular <> first singular
+  3rd <> third !
+  3rd << third *
+  2nd <> second
+  3rd << second *
+  1st <> first !
+  1st << first *
+  plural <> ! plural
+  plural << * plural
+  singular <> ! singular
+  singular << * singular
+  * <> ! !
 
 PNG.GEND : PNG.GEND
   * <> *
 
-E.TENSE : E.TENSE
+E.TENSE : TENSE
   * <> *
 
-E.ASPECT : E.ASPECT
+E.ASPECT : ASPECT
   progressive-habitual <> progressive-habitual
   durative <> durative
   experiential <> experiential
   imperfective <> imperfective
-  * <> *
+  * >> no-aspect
+	no-aspect << [e]
 
-E.MOOD : E.MOOD
+E.MOOD : MOOD
   * <> *
