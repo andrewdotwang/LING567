@@ -1,0 +1,93 @@
+LING 567 Lab6 Write-up
+Writer: Sehyun Kim
+Reviewer: Andrew Wang
+1.
+In our vpm file, we modified the mappings for PERNUM with inspiration from the eng vpm. We had to add additional lines to handle cases where the PERS and NUM were not specified. Our grammar also has first person plural exclusive and inclusive, so we also added a one way mapping to the external representation of just “first pl”.
+Since our grammar has aspect marked in some sentences but other forms that are just underspecified for aspect, we followed the lab instructions and added the no-aspect mapping as the default aspect. Our grammar does not have gender, so we removed gender from the vpm file. We also don’t have tense or mood, so we added the “tense <> *” and “mood <> *” mappings.
+These changes helped cut down on generator output in nan to nan, where we used to get 50+ lines for “I chase you”. After these vpm changes, we have cut that number down to 5.
+
+2.
+Semantics clean up
+For semantic empty word clean up, we worked on our two clausal complementizers. After adding two trigger rules in trigger.mtr by following the one for complementizers in the eng grammar, we were able to get rid of the no semantics and no filter rule warning. However, we’re now seeing some problems, as discussed on canvas:
+We're now seeing extra generations where the complementizer is showing up in weird places for a short sentence such as "dog sleep". In our lexicon, "sleep" is of a verb type that should not take any clausal complementizer. Only the declarative clausal complementizer is showing up in generation.
+狗 睏
+kau3 khun5
+dog sleep
+‘Dogs sleep’
+For another sentence "3SG ask if 1SG eat sugar", we got a bunch of generations where both the declarative and interrogative complementizers started appearing in different places. The verb "ask" can only take "if" as an optional interrogative clausal complementizer.
+伊 問 若 我 食 糖
+i1 bng5 lan4 gua3 tsia?8 thng2
+3SG ask if 1SG eat sugar
+‘He asked if I eat sugar’
+Looking deeper into the first case, we found that the MC value of the root (MC +) was different from the MC value of the CP at the top of the tree (MC na-or--), but we’re not sure how to fix this. Should we make any edits to the complementizer lexical types in the tdl?
+
+Constituent (wh-) questions
+We implemented wh-questions through the customization system this week. As question phrases containing wh-words are in-situ in Southern Min, we selected “Question phrases cannot be fronted.” This choice is reflected in our choices file as follows:
+section=wh-q
+front-matrix=in-situ
+As there are no constraints on morphology or verb types, etc., we didn’t make any additional choices. Our grammar is now able to cover examples like these:
+伊 食 啥
+i3 tsia?8 sia2
+3SG eat what
+‘What did he eat?’
+
+啥儂 睏
+sian2lang2 khun5
+who sleep
+‘Who sleeps?’
+One problem we discovered after implementing wh-questions is that sentences with a declarative clausal complement started to produce an ambiguity. Specifically, we noticed that our grammar interprets the following examples as wh-questions as well even though there’s no wh-word present:
+我 想 花 是 水
+gua3 siun4 hue1 si4 sui3
+1SG think flower be pretty
+‘I think the flower is pretty’
+
+我 想 看 花 是 水
+gua3 siun4 khua5 hue1 si4 sui3
+1SG think COMP flower be pretty
+‘I think that the flower is pretty’
+We suspect this might have something to do with the specific type of complementizer, possibly related to the issue described above in the semantics clean up section. The same ambiguity doesn’t occur when there is an interrogative clausal complement:
+伊 問 我 食 糖
+i1 bng5 gua3 tsia?8 thng2
+3SG ask 1SG eat sugar
+‘He asked (if) I eat sugar’
+
+伊 問 若 我 食 糖
+i1 bng5 lan4 gua3 tsia?8 thng2
+3SG ask if 1SG eat sugar
+‘He asked if I eat sugar’
+
+Argument dropping in auxiliaries
+We previously had an ambiguity involving auxiliary verbs as our grammar couldn’t prevent argument dropping occuring for auxiliaries. As a result, an example like below used to get two parses: one where the main verb ‘go’ is the complement of the auxiliary ‘should,’ and another where the auxiliary and main verb are coordinated.
+我 著 去
+gua3 tio?8 kheu5
+1SG should go
+‘I should go’
+However, this ambiguity was resolved after adding [ OPT - ] to the complement of subj-raise-aux, which makes the complement of an auxiliary obligatory.
+subj-raise-aux := aux-lex & trans-first-arg-raising-lex-item &
+  [ SYNSEM.LOCAL [ CAT.VAL [ SPEC < >,
+                             COMPS < #comps >,
+                             SUBJ < #subj > ],
+                   CONT.HOOK.XARG #xarg ],
+    ARG-ST < #subj &
+             [ LOCAL [ CAT [ HEAD noun,
+                             VAL [ SUBJ < >,
+                                   SPR < >,
+                                   SPEC < >,
+                                   COMPS < > ] ],
+                       CONT.HOOK.INDEX #xarg ] ],
+             #comps &
+             [ LOCAL.CAT [ VAL [ SUBJ < unexpressed >,
+                                 COMPS < >,
+                                 SPR < >,
+                                 SPEC < > ],
+                           HEAD verb ], OPT - ] > ].
+
+3.
+Overall, we have a slight improvement in coverage and overgeneration, from 81.8% to 86% and 33.9% to 35.6% respectively. We can also see the average number of parses per parsed item is 2.29. The most ambiguous item was our test for omnisyndeton clausal conjunction, with a total of 38 parses:
+伊 也 無 糖 也 無 鹽
+i1 a4 bo2 thng2 a4 bo2 ieom2
+3SG also not.have sugar also not.have salt
+‘He has neither sugar nor salt’
+Looking at the trees, we're seeing that a lot of the constituents are broken and not connected properly as we expect them to be. In a few trees, we're seeing that a D is on top of a PP that is on top of a S for some reason. This testcase also contains a semantically empty coordinator 也 as well, but we haven't worked on it yet since we were trying to fix the complementizers. We noticed this ambiguity too late, but we will ask about it next week and work on it!
+
+By implementing wh-questions, we improved our grammar’s coverage over a wider range of cases, as we are now able to parse the examples for wh-questions added to the testsuite in lab 2. Adding [ OPT - ] to the complement of the auxiliary type also significantly reduced ambiguity, considering that we were initially getting multiple parses for all test cases containing auxiliaries. However, we also identified a new source of ambiguity related to embedded declarative sentences, as mentioned earlier, and we hope to address this in the next lab.
