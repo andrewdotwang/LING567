@@ -344,7 +344,8 @@ subj-raise-aux := aux-lex & trans-first-arg-raising-lex-item &
                                  COMPS < >,
                                  SPR < >,
                                  SPEC < > ],
-                           HEAD verb ] ] > ].
+                           HEAD verb ],
+                           OPT - ] > ].
 
 subj-raise-aux-with-pred := subj-raise-aux & norm-sem-lex-item & trans-first-arg-raising-lex-item-1.
 

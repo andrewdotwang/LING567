@@ -143,10 +143,10 @@ Source: page 363
 Vetted: f
 Judgment: g
 Phenomena: {wh}
-伊 說 啥
-i3 seo?7 sia2
-3SG say what
-What did he say?
+伊 食 啥
+i3 tsia?8 sia2
+3SG eat what
+What did he eat?
 
 
 #14 wh-word in wrong position
@@ -154,10 +154,10 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: {wh}
-啥 伊 說
-sia2 i3 seo?7
-what 3SG say
-What did he say?
+啥 伊 食
+sia2 i3 tsia?8
+what 3SG eat
+What did he eat?
 
 
 #15 wh-word in wrong position
@@ -165,10 +165,10 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: {wh}
-伊 啥 說
-i3 sia2 seo?7
-3SG what say
-What did he say?
+伊 啥 食
+i3 sia2 tsia?8
+3SG what eat
+What did he eat?
 
 
 #16
@@ -176,10 +176,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: {wh}
-伊 卜 說 啥
-i3 bo?7 seo?7 sia2
-3SG want say what
-What does he want to say?
+伊 卜 食 啥
+i3 bo?7 tsia?8 sia2
+3SG want eat what
+What does he want to eat?
 
 
 #17 wh-word in wrong position
@@ -187,10 +187,10 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: {wh}
-伊 卜 啥 說
-i3 bo?7 sia2 seo?7
-3SG want what say
-What does he want to say?
+伊 卜 啥 食
+i3 bo?7 sia2 tsia?8
+3SG want what eat
+What does he want to eat?
 
 
 #18
