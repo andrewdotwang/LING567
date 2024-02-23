@@ -417,8 +417,9 @@ adj-lex := basic-intersective-adjective-lex & non-local-none-lex-item.
 
 adjective-adj-lex := attr-adj-lex &
   [ SYNSEM.LOCAL.CAT [ POSTHEAD -,
-                       VAL.SUBJ < >,
-                       HEAD.PRD + ] ].
+                       VAL.SUBJ < #subj >,
+                       HEAD.PRD + ],
+   ARG-ST < #subj > ].
 
 ; Basic attributive adjective definition
 
