@@ -50,3 +50,7 @@
 也4_nosem_gr := arg0e_gtr &
   [ CONTEXT.RELS.LIST < [ PRED "_and_coord_rel" ] >,
     FLAGS.TRIGGER "也4_nosem" ].
+
+其_gr := arg0e_gtr &
+  [ CONTEXT.RELS.LIST < [ PRED "poss_rel" ] >,
+    FLAGS.TRIGGER "possessor-adp-1" ].
