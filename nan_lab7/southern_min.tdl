@@ -409,7 +409,7 @@ adj-comp-copula-verb-lex := cop-lex &
 
 copula-cop-lex := adj-comp-copula-verb-lex.
 
-locative-copula-cop-lex := adj-comp-copula-verb-lex.
+; Deleted locative copula: locative-copula-cop-lex := adj-comp-copula-verb-lex.
 
 ;;; Adjectives
 

@@ -258,7 +258,7 @@ pak7kia1 := proper-noun-noun-lex &
   [ STEM < "著" >,
     SYNSEM.LKEYS.KEYREL.PRED "_should_v_rel" ].
 
-伫_locV := locative-verb-lex &
+伫 := locative-verb-lex &
   [ STEM < "伫" >,
     SYNSEM.LKEYS.KEYREL.PRED "_be+located_v_rel" ].
 
@@ -266,9 +266,6 @@ pak7kia1 := proper-noun-noun-lex &
 
 是 := copula-cop-lex &
   [ STEM < "是" > ].
-
-伫 := locative-copula-cop-lex &
-  [ STEM < "伫" > ].
 
 ;;; Determiners
 
