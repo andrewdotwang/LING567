@@ -396,7 +396,7 @@ cop-lex := basic-verb-lex-super & trans-first-arg-raising-lex-item-2 & non-mod-l
                                                       HEAD noun ] ] ] >,
                                COMPS < [ LOCAL.CAT cat-sat &
                                                    [ HEAD.PRD +,
-                                                     VAL [ SUBJ < [] >,
+                                                     VAL [ SUBJ < >,
                                                            COMPS < > ] ] ] >,
                                SPEC < > ],
                          HEAD.INIT + ] ] ].
