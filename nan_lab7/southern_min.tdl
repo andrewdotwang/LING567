@@ -397,7 +397,7 @@ cop-lex := basic-verb-lex-super & trans-first-arg-raising-lex-item-2 & non-mod-l
                                COMPS < [ LOCAL.CAT cat-sat &
                                                    [ HEAD.PRD +,
                                                      VAL [ SUBJ < >,
-                                                           COMPS < > ] ] ] >,
+                                                           COMPS < > ] ], OPT - ] >,
                                SPEC < > ],
                          HEAD.INIT + ] ] ].
 
@@ -419,7 +419,9 @@ adjective-adj-lex := attr-adj-lex &
   [ SYNSEM.LOCAL.CAT [ POSTHEAD -,
                        VAL.SUBJ < #subj >,
                        HEAD.PRD + ],
-   ARG-ST < #subj > ].
+   ARG-ST < #subj &
+             [ LOCAL [ CAT [ VAL [ SPR < > ],
+                             HEAD noun ] ] ] > ].
 
 ; Basic attributive adjective definition
 
