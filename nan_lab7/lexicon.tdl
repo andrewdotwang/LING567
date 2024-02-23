@@ -325,3 +325,9 @@ possessor-adp-1 := possessor-adp-lex-1 &
 
 若 := comps2-complementizer-lex-item &
   [ STEM < "若" > ].
+
+;;; Adposition
+
+裡 := normadp1-norm-adposition-lex &
+  [ STEM < "裡" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_in_p_rel" ].

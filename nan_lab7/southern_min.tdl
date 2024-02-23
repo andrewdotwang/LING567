@@ -881,3 +881,29 @@ vp6-bottom-coord-rule := unary-bottom-coord-rule & vp-bottom-coord-phrase &
 
 nosem-conj-lex :+
   [ SYNSEM.LOCAL.CAT.VAL.SPEC < > ].
+
+norm-adposition-lex := norm-sem-lex-item & no-hcons-lex-item & basic-intersective-mod-lex & non-local-none-lex-item &
+  [ ARG-ST < #comp >,
+    SYNSEM [ LKEYS.KEYREL arg12-ev-relation &
+                          [ PRED #pred,
+                            ARG2 #ind ],
+             L-QUE #lque,
+             LOCAL [ CONT.RELS.LIST < [ PRED #pred,
+                                        ARG0 event,
+                                        ARG1 event-or-ref-index ] >,
+                     CAT [ WH.BOOL -,
+                           VAL [ SPR < >,
+                                 SPEC < >,
+                                 SUBJ < >,
+                                 COMPS < #comp &
+                                         [ L-QUE #lque,
+                                           LOCAL [ CAT [ HEAD noun,
+                                                         VAL.SPR < > ],
+                                                   CONT.HOOK.INDEX #ind ] ] > ],
+                           HEAD adp &
+                                [ MOD < [ LOCAL.CAT [ VAL.SPR cons,
+                                                      WH.BOOL -,
+                                                      HEAD.AUX - ] ] > ] ] ] ] ].
+
+normadp1-norm-adposition-lex := norm-adposition-lex &
+  [ SYNSEM.LOCAL.CAT.HEAD.INIT - ].
