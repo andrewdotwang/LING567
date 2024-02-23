@@ -225,6 +225,11 @@ pak7kia1 := proper-noun-noun-lex &
   [ STEM < "問" >,
     SYNSEM.LKEYS.KEYREL.PRED "_ask_v_rel" ].
 
+在 := transitive-verb-verb-lex &
+  [ STEM < "在" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_be_v_id_rel" ].
+
+
 ;;; Auxiliaries
 
 呣 := neg-aux-aux-lex &
