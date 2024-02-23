@@ -715,10 +715,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: {cop}
-衫 伫 屜咧
-sa1 teu4 thua?7-le?0
-clothes be.at drawer-LOC
-The clothes are in the drawer
+衫 伫 車 裡
+sa1 teu4 tshia1 lai4
+clothes be.at vehicle in
+The clothes are in the car
 
 
 #66 missing copula
@@ -726,10 +726,10 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: {cop}
-衫 屜咧
-sa1 thua?7-le?0
-clothes drawer-LOC
-The clothes are in the drawer
+衫 車 裡
+sa1 tshia1 lai4
+clothes vehicle in
+The clothes are in the car
 
 
 #66 missing copula
@@ -737,10 +737,10 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: {cop}
-衫 屜咧
-sa1 thua?7-le?0
-clothes drawer-LOC
-The clothes are in the drawer
+衫 車 裡
+sa1 tshia1 lai4
+clothes vehicle in
+The clothes are in the car
 
 
 #67 possessive pronoun construction with genitive marker
@@ -1258,6 +1258,38 @@ Phenomena: {wo}
 gua3 tsui1 leu0
 1SG chase 2SG
 I chase you
+
+# mmt 15
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {wo}
+狗 是 枵
+kau3 si4 iau1
+dog be hungry
+The dogs are hungry
+
+
+# mmt 16
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {wo}
+狗 伫 公園 裡
+kau3 teu4 koeng1hng3 lai4
+dog be.at park in
+The dogs are in the park
+
+
+# mmt 17
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {wo}
+狗 是 貓
+kau3 si4 niau2
+dog be cat
+The dogs are the cats
 
 
 # mmt 20

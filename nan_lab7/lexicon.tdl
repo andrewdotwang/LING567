@@ -258,6 +258,10 @@ pak7kia1 := proper-noun-noun-lex &
   [ STEM < "著" >,
     SYNSEM.LKEYS.KEYREL.PRED "_should_v_rel" ].
 
+伫_locV := locative-verb-lex &
+  [ STEM < "伫" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_be+located_v_rel" ].
+
 ;;; Copulas
 
 是 := copula-cop-lex &
