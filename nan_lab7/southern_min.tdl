@@ -663,6 +663,7 @@ same-subordinated-lex-rule := lex-rule &
 
 nf-comp-head-phrase := head-nf-comp-phrase-super & head-final &
   [ HEAD-DTR.SYNSEM.LIGHT +,
+    HEAD-DTR.SYNSEM.LOCAL.CAT [ HEAD #head ],
     NON-HEAD-DTR.SYNSEM.LOCAL [ CAT.HEAD +np,
                                 CONT.HOOK.ICONS-KEY semantic-focus ] ].
 
