@@ -450,7 +450,7 @@ posthead-so-clause-init-adv-subord-lex-item := adverb-subord-lex-item &
                                                       COMPS < > ] ] >,
                          POSTHEAD - ] ] ].
 
-adv-marked-subord-clause-phrase := unary-phrase &
+adv-marked-subord-clause-phrase := unary-phrase & unary-nonloc-phrase &
   [ SYNSEM.LOCAL [ CAT [ MC -,
                          VAL [ SPR < >,
                                COMPS < >,
@@ -579,7 +579,7 @@ demonst-det-determiner-lex := determiner-lex & no-icons-lex-item &
 
 ;;; Adverbs
 
-adverb-lex-item := nonscop-adverb-lex &
+adverb-lex-item := nonscop-adverb-lex & non-local-none-lex-item &
   [ SYNSEM [ LOCAL [ CAT [ VAL [ SUBJ < >,
                                  SPEC < >,
                                  SPR < >,
@@ -750,7 +750,7 @@ poss-unary-phrase := basic-unary-phrase &
                                           COMPS < >,
                                           SUBJ < >,
                                           SPEC < > ],
-                                    HEAD +np ],
+                                    HEAD +np, MC + ],
                               CONT.HOOK.INDEX #possessor ],
                       NON-LOCAL #nonloc ] ] > ].
 
