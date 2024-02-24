@@ -699,10 +699,10 @@ i1 si4 sui3
 She is pretty
 
 
-#64 missing copula
+#64 adjectives can stand alone
 Source: author
 Vetted: f
-Judgment: u
+Judgment: g
 Phenomena: {cop}
 伊 水
 i1 sui3

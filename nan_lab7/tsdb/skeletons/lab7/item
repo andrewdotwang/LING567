@@ -61,10 +61,10 @@
 61@author@@@1@cop@伊 是 大學生@@@@1@3@3SG be university.studentHe is a university student@kim and wang@january 26, 2024
 62@author@@@1@cop@伊 大學生@@@@0@2@3SG university.studentHe is a university student@kim and wang@january 26, 2024
 63@author@@@1@cop@伊 是 水@@@@1@3@3SG be prettyShe is pretty@kim and wang@january 26, 2024
-64@author@@@1@cop@伊 水@@@@0@2@3SG prettyShe is pretty@kim and wang@january 26, 2024
-65@author@@@1@cop@衫 伫 屜咧@@@@1@3@clothes be.at drawer-LOCThe clothes are in the drawer@kim and wang@january 26, 2024
-66@author@@@1@cop@衫 屜咧@@@@0@2@clothes drawer-LOCThe clothes are in the drawer@kim and wang@january 26, 2024
-67@author@@@1@cop@衫 屜咧@@@@0@2@clothes drawer-LOCThe clothes are in the drawer@kim and wang@january 26, 2024
+64@author@@@1@cop@伊 水@@@@1@2@3SG prettyShe is pretty@kim and wang@january 26, 2024
+65@author@@@1@cop@衫 伫 車 裡@@@@1@4@clothes be.at vehicle inThe clothes are in the car@kim and wang@january 26, 2024
+66@author@@@1@cop@衫 車 裡@@@@0@3@clothes vehicle inThe clothes are in the car@kim and wang@january 26, 2024
+67@author@@@1@cop@衫 車 裡@@@@0@3@clothes vehicle inThe clothes are in the car@kim and wang@january 26, 2024
 68@author@@@1@poss@伊 買 我 其 車@@@@1@5@3SG buy 1SG GEN vehicleHe bought my car@kim and wang@january 26, 2024
 69@author@@@1@poss@伊 買 我 車 其@@@@0@5@3SG buy 1SG vehicle GENHe bought my car@kim and wang@january 26, 2024
 70@author@@@1@poss@伊 買 其 我 車@@@@0@5@3SG buy GEN 1SG vehicleHe bought my car@kim and wang@january 26, 2024
@@ -112,5 +112,8 @@
 112@author@@@1@wo@狗 睏@@@@1@2@dog sleepDogs sleep@kim and wang@january 26, 2024
 113@author@@@1@wo@狗 追 車@@@@1@3@dog chase carDogs chase cars@kim and wang@january 26, 2024
 114@author@@@1@wo@我 追 汝@@@@1@3@1SG chase 2SGI chase you@kim and wang@january 26, 2024
-115@author@@@1@wh@啥儂 睏@@@@1@2@who sleepWho sleeps@kim and wang@january 26, 2024
-116@author@@@1@wh@狗 追 啥@@@@1@3@dog chase whatWhat do the dogs chase@kim and wang@january 26, 2024
+115@author@@@1@wo@狗 是 枵@@@@1@3@dog be hungryThe dogs are hungry@kim and wang@january 26, 2024
+116@author@@@1@wo@狗 伫 公園 裡@@@@1@4@dog be.at park inThe dogs are in the park@kim and wang@january 26, 2024
+117@author@@@1@wo@狗 是 貓@@@@1@3@dog be catThe dogs are the cats@kim and wang@january 26, 2024
+118@author@@@1@wh@啥儂 睏@@@@1@2@who sleepWho sleeps@kim and wang@january 26, 2024
+119@author@@@1@wh@狗 追 啥@@@@1@3@dog chase whatWhat do the dogs chase@kim and wang@january 26, 2024
