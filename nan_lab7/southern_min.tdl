@@ -708,7 +708,7 @@ subj-head-phrase := decl-head-subj-phrase & head-final &
 
 comp-head-phrase := basic-head-1st-comp-phrase & head-final &
   [ HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.INIT -,
-    SYNSEM.LOCAL.CAT.HEAD +vc &
+    SYNSEM.LOCAL.CAT.HEAD +vpc &
                           [ AUX + ] ].
 
 poss-unary-phrase-1 := poss-unary-phrase &
