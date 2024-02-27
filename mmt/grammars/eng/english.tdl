@@ -6,7 +6,7 @@
 ;;; based on Matrix customization system version of:
 ;;;     Fri Feb  7 07:17:15 UTC 2014
 ;;;
-;;; 
+;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ; Type assigning empty mod list. Added to basic types for nouns, verbs and determiners.
@@ -52,7 +52,7 @@ basic-head-mod-phrase-simple :+ [ SYNSEM.LOCAL.CAT.MC #mc,
 
 ; For wh questions
 
-head-opt-comp-phrase := basic-head-opt-comp-phrase. 
+head-opt-comp-phrase := basic-head-opt-comp-phrase.
 
 ; For NP NP juxtaposition-type possessive constructions.
 
@@ -78,7 +78,7 @@ poss-phrase := head-final &
     NON-HEAD-DTR.SYNSEM.LOCAL [ CAT [ HEAD noun,
 				      VAL.SPR < > ],
 				CONT.HOOK.INDEX #poss ] ].
-		   
+
 
 
 
@@ -102,7 +102,7 @@ sg := pernum.
 pl := non-3sg & are.
 non-3sg := pernum.
 are := pernum.
-was := pernum. 
+was := pernum.
 1sg := 1st & sg & was.
 2sg := 2nd & sg.
 3sg := 3rd & sg & was.
@@ -179,7 +179,7 @@ no-spr-noun-lex := noun-lex &
 ; Nouns which cannot take specifiers mark their SPR requirement
 ; as OPT +.  Making the non-head daughter OPT - in this rule
 ; keeps such nouns out.
-; 
+;
 ; Rules for building NPs.  Note that the Matrix uses SPR for
 ; the specifier of nouns and SUBJ for the subject (specifier) of verbs.
 
@@ -276,7 +276,7 @@ main-verb-lex := verb-lex & basic-verb-lex &
                                      COMPS < > ],
                            CONT.HOOK.INDEX #xarg ] ] ].
 
-aux-lex := verb-lex & 
+aux-lex := verb-lex &
   [ SYNSEM.LOCAL.CAT.HEAD.AUX + ].
 
 intransitive-verb-lex := main-verb-lex & intransitive-lex-item &
@@ -311,13 +311,13 @@ opt-trans-verb-lex := nom-acc-transitive-verb-lex &
 no-obj-drop-verb-lex := transitive-verb-lex &
   [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.OPT - ].
 
-obj-drop-verb-lex := transitive-verb-lex & 
+obj-drop-verb-lex := transitive-verb-lex &
   [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.OPT-CS type-id ].
 
 ;;; Clausal complements
 
 clausal-comp-verb-lex := main-verb-lex & clausal-second-arg-trans-lex-item &
-  [ SYNSEM.LOCAL.CAT.VAL.COMPS < #comps & 
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS < #comps &
 				 [ LOCAL.CAT [ MC -,
 					       HEAD +vc & [ FORM finite ],
 					       VAL [ SUBJ < >,
@@ -418,7 +418,7 @@ copula-verb-lex := verb-lex & trans-first-arg-raising-lex-item-2 & fp-rule-dtr &
                            HEAD +jp ] ] > ].
 
 
-id-copula-verb-lex := verb-lex & transitive-lex-item & basic-verb-lex & fp-rule-dtr & 
+id-copula-verb-lex := verb-lex & transitive-lex-item & basic-verb-lex & fp-rule-dtr &
   [ INFLECTED infl-satisfied,
     SYNSEM [ LKEYS.KEYREL.PRED "_be_v_id_rel",
 	     LOCAL.CAT [ HEAD.AUX +,
@@ -571,7 +571,7 @@ poss-pron-det-lex := determiner-lex-supertype &
 				    ARG0 #arg2,
 				    RSTR #harg ],
 				  #altkeyrel !>,
-			    HCONS <! [ ], qeq & [ HARG #harg, 
+			    HCONS <! [ ], qeq & [ HARG #harg,
 						  LARG #lbl2 ] !> ] ],
 	     LKEYS.ALTKEYREL #altkeyrel & noun-relation &
 			     [ PRED "pron_rel",
@@ -614,7 +614,7 @@ sg-lex-rule := const-lex-rule & number-lex-rule-super &
 mass-lex-rule := const-lex-rule & number-lex-rule-super &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM sg,
     DTR mass-noun-lex ].
-  
+
 
 pl-lex-rule := infl-lex-rule & number-lex-rule-super &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM pl ].
@@ -758,7 +758,7 @@ bare-np-phrase := basic-bare-np-phrase & head-valence-phrase &
 			    CAT.VAL.SPR < unexpressed & [ OPT-CS #cog-st ] > ]].
 
 ; This rule takes [MC na] inverted phrases and licensesthem as main clauses with question semantics.
-; 
+;
 
 int-cl := interrogative-clause & head-only &
   [ SYNSEM.LOCAL.CAT [ HEAD.INV +,
@@ -808,7 +808,7 @@ neg-adv-lex := basic-scopal-adverb-lex &
 ; This lexical rule adds the neg_rel to the verb's
 ; RELS list.  It is instantiated by a spelling-changing
 ; rule as specified in irules.tdl.
-; 
+;
 ; This rule applies only to auxiliaries.
 
 neg-infl-lex-rule := cont-change-only-lex-rule & inflecting-lex-rule & nocoord &
@@ -841,9 +841,9 @@ conj-lex :+ norm-zero-arg.
 topormid-coord-phrase :+ [ SYNSEM.NON-LOCAL #nl,
    LCOORD-DTR.SYNSEM.NON-LOCAL #nl,
    RCOORD-DTR.SYNSEM.NON-LOCAL #nl ].
-			  
+
 bottom-coord-phrase :+ [ SYNSEM.NON-LOCAL #nl,
-   NONCONJ-DTR.SYNSEM.NON-LOCAL #nl ].			  
+   NONCONJ-DTR.SYNSEM.NON-LOCAL #nl ].
 
 ;;; Coordination Strategy 1
 
@@ -920,7 +920,7 @@ fp-rule-dtr := word-or-lexrule.
 
 ;;; Wh-pronouns
 
-wh-pronoun-noun-lex := norm-hook-lex-item & basic-icons-lex-item & 
+wh-pronoun-noun-lex := norm-hook-lex-item & basic-icons-lex-item &
   [ SYNSEM [ LOCAL [ CAT [ HEAD noun,
 			   VAL [ SPR < >,
 				 SUBJ < >,
@@ -928,7 +928,7 @@ wh-pronoun-noun-lex := norm-hook-lex-item & basic-icons-lex-item &
 				 SPEC < > ] ],
 		     CONT [ RELS <! [ LBL #larg,
 				      ARG0 #ind & ref-ind ],
-				  [ PRED "wh_q_rel",
+				  [ PRED "which_q_rel",
 				    ARG0 #ind,
 				    RSTR #harg ] !>,
 			    HCONS <! [ HARG #harg,
@@ -940,18 +940,18 @@ wh-pronoun-noun-lex := norm-hook-lex-item & basic-icons-lex-item &
 basic-head-filler-phrase :+
    [ ARGS < [ SYNSEM.LOCAL.COORD - ], [ SYNSEM.LOCAL.COORD - ] > ].
 
-wh-ques-phrase := basic-head-filler-phrase & interrogative-clause & 
+wh-ques-phrase := basic-head-filler-phrase & interrogative-clause &
 		  head-final &
    [ SYNSEM.LOCAL.CAT [ MC bool,
 			VAL #val,
-			WH +, 
+			WH +,
 			HEAD verb & [ FORM finite ] ],
      HEAD-DTR.SYNSEM.LOCAL.CAT [ MC na,
 				 VAL #val & [ SUBJ < >,
 					      COMPS < > ] ],
      NON-HEAD-DTR.SYNSEM.NON-LOCAL.QUE <! ref-ind !> ].
 
-mc-wh-subj-phrase := basic-head-filler-phrase & interrogative-clause & 
+mc-wh-subj-phrase := basic-head-filler-phrase & interrogative-clause &
 		  head-final &
    [ SYNSEM.LOCAL.CAT [ MC +,
 			VAL #val,
@@ -960,7 +960,7 @@ mc-wh-subj-phrase := basic-head-filler-phrase & interrogative-clause &
 							   VAL #val & [ SUBJ < >,
 									COMPS < > ] ] ],
      NON-HEAD-DTR.SYNSEM.NON-LOCAL.QUE <! ref-ind !> ].
-		
+
 mc-wh-ques-phrase := wh-ques-phrase &
  [ SYNSEM.LOCAL.CAT [ MC +,
 		      HEAD.INV + ]].
