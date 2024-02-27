@@ -6,7 +6,7 @@
 ;;; based on Matrix customization system version of:
 ;;;     Fri Apr 21 07:02:53 UTC 2017
 ;;;
-;;; 
+;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ; Type assigning empty mod list. Added to basic types for nouns, verbs and determiners.
@@ -151,7 +151,7 @@ noun-lex := basic-noun-lex & basic-one-arg & no-hcons-lex-item & non-mod-lex-ite
                            SPR < #spr &
                                  [ LOCAL.CAT.HEAD det ] > ] ].
 
-;; The only determiners are possessive pronouns. 
+;; The only determiners are possessive pronouns.
 
 head-spec-phrase := basic-head-spec-phrase & head-final &
   [ NON-HEAD-DTR.SYNSEM.OPT - ].
@@ -197,7 +197,7 @@ poss-phrase := head-final &
 				      REL [ LIST #rfirst,
 					     LAST #rmiddle ] ] ] ].
 
-common-noun-noun-lex := noun-lex & 
+common-noun-noun-lex := noun-lex &
   [ SYNSEM [ LOCAL.CONT.HOOK.INDEX.PNG.PER 3rd,
 	     NON-LOCAL [ QUE 0-dlist,
 			 REL 0-dlist,
@@ -262,7 +262,7 @@ pronoun-2sg-gen-noun-lex := pronoun-gen-noun-lex & pronoun-2nd-noun-lex & pronou
 
 pronoun-2sg-acc-noun-lex := pronoun-acc-noun-lex & pronoun-2nd-noun-lex & pronoun-sg-noun-lex.
 
-wh-pronoun-noun-lex := norm-hook-lex-item & basic-icons-lex-item & 
+wh-pronoun-noun-lex := norm-hook-lex-item & basic-icons-lex-item &
   [ SYNSEM [ LOCAL [ CAT [ HEAD noun,
 			   VAL [ SPR < >,
 				 SUBJ < >,
@@ -271,7 +271,7 @@ wh-pronoun-noun-lex := norm-hook-lex-item & basic-icons-lex-item &
 		     CONT [ HOOK.INDEX.PNG.PER 3rd,
 	                    RELS <! [ LBL #larg,
 				       ARG0 #ind & ref-ind ],
-				  [ PRED "wh_q_rel",
+				  [ PRED "which_q_rel",
 				    ARG0 #ind,
 				    RSTR #harg ] !>,
 			    HCONS <! [ HARG #harg,
@@ -280,7 +280,7 @@ wh-pronoun-noun-lex := norm-hook-lex-item & basic-icons-lex-item &
 
 ;Ge -"who", could be modeled via inflectional rules, since it's morphophonology is concatenative, but
 ;mej -"what", has very complicated morphophonology. In order to keep it consistent between both, and since
-;both 'wh' pronouns are a closed class anyway, we're just doing it lexically. 
+;both 'wh' pronouns are a closed class anyway, we're just doing it lexically.
 wh-pronoun-nom-noun-lex := wh-pronoun-noun-lex &
   [ SYNSEM.LOCAL.CAT.HEAD.CASE nom ].
 
@@ -380,7 +380,7 @@ verb-IIb-trans-verb-lex := nom-acc-transitive-verb-lex &
 verb-III-trans-verb-lex := clausal-second-arg-trans-verb-lex &
   [ INFLECTED.TENSE-PER-NUM-III-FLAG - ].
 
-;SHOULD THIS INHERIT FROM MORE/LESS THAN THIS? 
+;SHOULD THIS INHERIT FROM MORE/LESS THAN THIS?
 verb-V-lex := verb-lex &
   [ INFLECTED.TENSE-PER-NUM-V-FLAG - ].
 
@@ -426,7 +426,7 @@ subj-raise-aux-no-pred := subj-raise-aux & raise-sem-lex-item &
   [ ARG-ST < [ ],
              [ LOCAL.CAT.HEAD.AUX - ] > ].
 
-	
+
 future-aux-lex := subj-raise-aux-no-pred &
   [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.E.TENSE future,
                    CAT.VAL.COMPS.FIRST.LOCAL.CAT.HEAD.FORM infform ],
@@ -469,7 +469,7 @@ cop-lex := basic-verb-lex-super & trans-first-arg-raising-lex-item-2 &
                              COMPS < [ LOCAL.CAT [ HEAD.PRD +,
                                                    VAL [ SUBJ < >,
                                                          COMPS < > ] ] ] >,
-                             SPR < >,			     
+                             SPR < >,
                              SPEC < > ]],
                    CONT.HOOK.XARG #xarg ] ].
 
@@ -633,7 +633,7 @@ adj-lex := basic-intersective-adjective-lex.
 
 adj-adj-lex := adj-lex &
   [ SYNSEM.LOCAL [ CAT [ POSTHEAD -,
-			 VAL [ SUBJ < > ] ] ,		
+			 VAL [ SUBJ < > ] ] ,
 		   CONT [ HCONS <! !> ] ],
     INFLECTED.ADJ_ATTR-OR-NUMBER-FLAG - ].
 
@@ -693,7 +693,7 @@ poss-pron-det-lex := determiner-lex-supertype &
 				    ARG0 #arg2,
 				    RSTR #harg ],
 				  #altkeyrel !>,
-			    HCONS <! [ ], qeq & [ HARG #harg, 
+			    HCONS <! [ ], qeq & [ HARG #harg,
 						  LARG #lbl2 ] !> ] ],
 	     LKEYS.ALTKEYREL #altkeyrel & noun-relation &
 			     [ PRED "pron_rel",
@@ -705,7 +705,7 @@ poss-pron-det-lex := determiner-lex-supertype &
 ;;;Complementizers
 complementizer-lex-item := raise-sem-lex-item & basic-one-arg & non-mod-lex-item &
   [ SYNSEM.LOCAL.CAT [ HEAD comp,
-                       VAL [ SUBJ < >, 
+                       VAL [ SUBJ < >,
                              COMPS < #comps >,
                              SPR < > ] ],
     ARG-ST < #comps & [ LOCAL [ CAT [ HEAD verb & [ FORM finite ],
@@ -907,7 +907,7 @@ tense-per-num-V-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule &
                 ADJ_ATTR-OR-NUMBER-FLAG #adj_attr-or-number,
                 TENSE-PER-NUM-NEG-FLAG #tense-per-num-neg,
                 TENSE-PER-NUM-PROG-FLAG #tense-per-num-prog,
-		TENSE-PER-NUM-MODAL-FLAG #tense-per-num-modal,		
+		TENSE-PER-NUM-MODAL-FLAG #tense-per-num-modal,
                 CASE-NUM-IE-FLAG #case-num-ie,
                 TENSE-PER-NUM-FUT-FLAG #tense-per-num-fut,
                 CASE-NUM-IB-FLAG #case-num-ib,
@@ -1341,7 +1341,7 @@ adj_pl-lex-rule := infl-lex-rule & adj_pred-lex-rule &
 
 adj_attr-lex-rule := const-lex-rule & number-lex-rule-super &
   [ SYNSEM [ LOCAL.CAT.HEAD [ PRD -,
-			      MOD < [ LOCAL intersective-mod & 
+			      MOD < [ LOCAL intersective-mod &
 					    [ CAT [ HEAD noun,
 						    VAL.SPR < [ ] > ],
 					      CONT.HOOK [ INDEX #ind,
@@ -1418,9 +1418,9 @@ bare-np-phrase := basic-bare-np-phrase &
 locative-pp-phrase := unary-phrase &
   [ SYNSEM [ LOCAL.CAT [ HEAD adp & [ MOD < [ SYNSEM.LOCAL intersective-mod &
                                                     [ CAT.HEAD verb ] ] > ],
-			 
+
 		          VAL [ COMPS < >,
-			        SUBJ < >, 
+			        SUBJ < >,
 			        SPR < > ]]],
     C-CONT [ HOOK [ LTOP #ltop,
 		    INDEX #index,
@@ -1436,7 +1436,7 @@ locative-pp-phrase := unary-phrase &
 				  VAL.SPR < > ],
 			    CONT.HOOK [ INDEX #dtr ]]] > ].
 
-wh-ques-phrase := basic-head-filler-phrase & interrogative-clause & 
+wh-ques-phrase := basic-head-filler-phrase & interrogative-clause &
 		  head-final &
    [ SYNSEM.LOCAL.CAT [ MC bool,
 			VAL #val,
@@ -1576,7 +1576,7 @@ basic-n-mid-coord-rule-case-matching := basic-n-mid-coord-rule &
 n-bottom-coord-phrase-case-matching := n-bottom-coord-phrase &
   [ SYNSEM.LOCAL.CAT.HEAD.CASE #case ,
     NONCONJ-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE #case ].
-   
+
 
 n2-any-1st-1st-any-pl-pl-top-coord-rule := basic-n-top-coord-rule-case-matching & monopoly-top-coord-rule & any-1st-1st-per-coord-rule & any-pl-pl-num-coord-rule &
   [ SYNSEM.LOCAL.COORD-STRAT "2" ].
