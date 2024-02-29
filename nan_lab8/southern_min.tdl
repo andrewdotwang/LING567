@@ -315,8 +315,8 @@ transitive-verb-verb-lex := transitive-verb-lex.
 
 transitive-decl-clausal-comps-verb-verb-lex := clausal-verb-lex & clausal-second-arg-trans-lex-item &
   [ SYNSEM [ LOCAL.CAT.VAL.COMPS < [ LOCAL [ CAT [ HEAD +vc &
-                                                        [ FORM finite ],
-                                                   WH.BOOL - ],
+                                                        [ FORM finite ]
+                                                   ],
                                              CONT.HOOK.INDEX.SF prop ] ] >,
              NON-LOCAL.QUE.LIST < > ] ].
 
