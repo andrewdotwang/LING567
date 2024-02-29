@@ -1,0 +1,291 @@
+LING 567 Lab7 Write-up
+Writer: Andrew Wang
+Reviewer: Sehyun Kim
+
+1.
+NPs, adjectives, and adpositional phrases can function as predicates in Southern Min. When used as predicates, NPs and adjectives are accompanied by the copula 是.
+
+#61 NP predicate
+伊 是 大學生
+i1 si4 tua5o?8sing1
+3SG be university.student
+He is a university student
+
+#63 adjectival predicate
+伊 是 水
+i1 si4 sui3
+3SG be pretty
+She is pretty
+
+While the copula is required for NP predicates, it is optional for adjectives. The following is an example of a stand-alone adjectival predicate:
+
+#64 adjectives can stand alone
+伊 水
+i1 sui3
+3SG pretty
+She is pretty
+
+PP predicates are accompanied by the obligatory locative verb 伫.
+
+#65 PP predicate
+衫 伫 車 裡
+sa1 teu4 tshia1 lai4
+clothes be.at vehicle in
+The clothes are in the car
+
+2.
+
+We added a semantically contentful adposition to our grammar, 裡 (in). This adposition has the “_in_p_rel” pred and lexical type normadp1-norm-adposition-lex. We also defined a new type norm-adposition-lex and its subtype normadp1-norm-adposition-lex.
+
+norm-adposition-lex := norm-sem-lex-item & no-hcons-lex-item & basic-intersective-mod-lex & non-local-none-lex-item &
+  [ ARG-ST < #comp >,
+    SYNSEM [ LKEYS.KEYREL arg12-ev-relation &
+                          [ PRED #pred,
+                            ARG2 #ind ],
+             L-QUE #lque,
+             LOCAL [ CONT.RELS.LIST < [ PRED #pred,
+                                        ARG0 event,
+                                        ARG1 event-or-ref-index ] >,
+                     CAT [ WH.BOOL -,
+                           VAL [ SPR < >,
+                                 SPEC < >,
+                                 SUBJ < >,
+                                 COMPS < #comp &
+                                         [ L-QUE #lque,
+                                           LOCAL [ CAT [ HEAD noun,
+                                                         VAL.SPR < > ],
+                                                   CONT.HOOK.INDEX #ind ] ] > ],
+                           HEAD adp &
+                                [ MOD < [ LOCAL.CAT [ VAL.SPR cons,
+                                                      WH.BOOL -,
+                                                      HEAD.AUX - ] ] > ] ] ] ] ].
+
+normadp1-norm-adposition-lex := norm-adposition-lex &
+  [ SYNSEM.LOCAL.CAT.HEAD.INIT - ].
+
+We found our analysis involving the adposition 裡 to be working as intended.
+Some examples from our testsuite:
+
+衫 伫 車 裡
+sa1 teu4 tshia1 lai4
+clothes be.at vehicle in
+The clothes are in the car
+
+狗 伫 公園 裡
+kau3 teu4 koeng1hng3 lai4
+dog be.at park in
+The dogs are in the park
+
+For copulas, we already had a partially working implementation in our grammar. We have a copula 是 of type copula-cop-lex, which is a subtype of cop-lex where the HEAD adj is specified. Our grammar could already handle test cases where the copula takes an adjective.
+To improve its performance, we made a change to cop-lex by specifying [ OPT - ] in COMPS of cop-lex to prevent the copula from dropping its complement.
+
+cop-lex := basic-verb-lex-super & trans-first-arg-raising-lex-item-2 & non-mod-lex-item &
+  [ SYNSEM.LOCAL [ CONT.HOOK.XARG #xarg,
+                   CAT [ VAL [ SUBJ < [ LOCAL [ CONT.HOOK.INDEX #xarg,
+                                                CAT cat-sat &
+                                                    [ VAL [ SPR < >,
+                                                            COMPS < > ],
+                                                      HEAD noun ] ] ] >,
+                               COMPS < [ LOCAL.CAT cat-sat &
+                                                   [ HEAD.PRD +,
+                                                     VAL [ SUBJ < >,
+                                                           COMPS < > ] ], OPT - ] >,
+                               SPEC < > ],
+                         HEAD.INIT + ] ] ].
+
+adj-comp-copula-verb-lex := cop-lex &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CAT.HEAD adj ].
+
+copula-cop-lex := adj-comp-copula-verb-lex.
+
+Following the ERG, we created a separate lexical entry for the copula 是 to take NP predicates. As it doesn’t display any auxiliary properties, it belongs to the regular transitive verb category.
+
+是_tv := transitive-verb-verb-lex &
+[ STEM < "是" >,
+  SYNSEM.LKEYS.KEYREL.PRED "_be_v_id_rel" ].
+
+Now the copula 是 can take an NP predicate as well. We found our analysis involving the copula 是 to be working as intended.
+Some examples from our testsuite:
+
+狗 是 貓
+kau3 si4 niau2
+dog be cat
+The dogs are the cats
+
+伊 是 水
+i1 si4 sui3
+3SG be pretty
+She is pretty
+
+While Southern Min doesn’t have locative NPs, locative verbs are attested. We have a locative verb 伫 in our grammar, with pred value “_be+located_v_rel” and of type locative-verb-lex.
+
+Following the lab instructions, we added locative-verb-lex to our grammar:
+
+locative-verb-lex := verb-lex & trans-first-arg-control-lex-item &
+ [ SYNSEM.LOCAL [ CAT.VAL [ SUBJ < #subj >,
+                            COMPS < #comps >,
+                            SPR < >,
+                            SPEC < > ],
+                  CONT.HOOK.XARG #xarg ],
+   ARG-ST < #subj &
+            [ LOCAL [ CONT.HOOK.INDEX #xarg,
+                      CAT [ VAL [ SPR < >,
+                                  COMPS < > ],
+                            HEAD noun ] ] ],
+            #comps &
+            [ LOCAL.CAT [ VAL [ COMPS < > ],
+                          HEAD adp ] ] > ].
+
+We found our analysis involving the locative verb 伫 to be working as intended.
+Some examples from our testsuite:
+
+衫 伫 車 裡
+sa1 teu4 tshia1 lai4
+clothes be.at vehicle in
+The clothes are in the car
+
+狗 伫 公園 裡
+kau3 teu4 koeng1hng3 lai4
+dog be.at park in
+The dogs are in the park
+
+To handle APs as stand-alone predicates, we constrained the SUBJ value to HEAD noun & SPR < > for the adjective:
+adjective-adj-lex := attr-adj-lex &
+  [ SYNSEM.LOCAL.CAT [ POSTHEAD -,
+                       VAL.SUBJ < #subj >,
+                       HEAD.PRD + ],
+   ARG-ST < #subj &
+             [ LOCAL [ CAT [ VAL [ SPR < > ],
+                             HEAD noun ] ] ] > ].
+
+
+We also modified the root to allow adjectives with +vj:
+root := sign &
+  [ SYNSEM [ NON-LOCAL non-local-none,
+             LOCAL [ COORD -,
+                     CAT [ VAL [ SUBJ < >,
+                                 COMPS < > ],
+                           MC +,
+                           HEAD +vj &
+                                [ FORM finite ] ] ] ] ].
+
+We found our analysis involving the APs to be working as intended.
+Some examples from our testsuite:
+
+伊 水
+i1 sui3
+3SG pretty
+She is pretty
+
+伊 是 水
+i1 si4 sui3
+3SG be pretty
+She is pretty
+
+狗 是 枵
+kau3 si4 iau1
+dog be hungry
+The dogs are hungry
+
+3.
+For MMT #15, we have:
+狗 是 枵
+kau3 si4 iau1
+dog be hungry
+The dogs are hungry
+
+The sentence parses correctly as expected without any ambiguity, and the MRS is very similar to the one provided in the lab instructions.
+However, when we perform eng to nan translations, we only get:
+狗 枵
+dog hungry
+The dogs are hungry
+Which is still grammatical as our grammar allows APs as stand-alone predicates.
+
+For MMT #16, we have:
+狗 伫 公園 裡
+kau3 teu4 koeng1hng3 lai4
+dog be.at park in
+The dogs are in the park
+
+The sentence parses correctly as expected without any ambiguity, and the MRS is very similar to the one provided in the lab instructions.
+When we perform eng to nan translations, we get this sentence as expected as well.
+
+ For MMT #17, we have:
+狗 是 貓
+kau3 si4 niau2
+dog be cat
+The dogs are the cats
+
+The sentence parses correctly as expected without any ambiguity, and the MRS is very similar to the one provided in the lab instructions.
+When we perform eng to nan translations, we get this sentence as expected as well.
+
+4.
+We did not work on the Demonstratives and definiteness section.
+
+5.
+We did not work on the Demonstratives and definiteness section.
+
+6.
+We did not make any changes to our nan.txt file, since we finished working on it in lab 5.
+
+7.
+One source of ambiguity appeared in this example:
+
+公園 裡 狗 食
+koeng1hng3 lai4 kau3 tsia?8
+park in dog eat
+Dogs in the park eat
+
+Specifically, the problem was that the NP ‘park’ became a focused phrase even when it was combining with an adposition rather than a verb. To cut down on this ambiguity, we looked at norm-adposition-lex and narrow-focused-phrase. We thought the feature value [ SYNSEM.INFOSTR-FLAG + ] distinguished focused NPs from regular NPs, so we added [ INFOSTR-FLAG - ] to the complement of the P. After this change, the above sentence didn’t parse at all, but it revealed that the regular comp-head phrase was incompatible with [ HEAD adp ] complements. Looking at comp-head-phrase, we found that the HEAD was defined as +vc:
+
+comp-head-phrase := basic-head-1st-comp-phrase & head-final &
+ [ HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.INIT -,
+   SYNSEM.LOCAL.CAT.HEAD +vc &
+                         [ AUX + ] ].
+
+When we changed this into [ HEAD +vpc ], we were able to parse the above sentence again, but the ambiguity was still not fully resolved.
+
+Another source of ambiguity was found here:
+
+花 是 水 所以 我 買
+flower be pretty so 1SG buy
+The flower is pretty, so I bought it
+
+For some reason, both the entire sentence and the subordinate clause were being interpreted as wh-questions in some of the parses. When we checked the local AVM of the trees, we noticed NON-LOCAL was completely underspecified for the adverb and the phrase above that. To fix the underspecification, we added the supertypes non-local-none-lex-item and unary-nonloc-phrase to adverb-lex-item and adv-marked-subord-clause-phrase, respectively:
+
+adverb-lex-item := nonscop-adverb-lex & non-local-none-lex-item &
+adv-marked-subord-clause-phrase := unary-phrase & unary-nonloc-phrase &
+
+However, adding these supertypes somehow increased the number of parses. We were observing a new source of ambiguity, where poss-unary-phrase-1 was licensing D over PP. As we didn’t want possessive construction to take place here, we compared the type definitions for adv-marked-subord-clause-phrase and poss-unary-phrase (which is the supertype of poss-unary-phrase-1) to identify a contrasting constraint. Adding [ MC + ] to the element in the ARGS list of poss-unary-phrase decreased the number of parses again, as all the trees with PP-D branching were gone.
+
+poss-unary-phrase := basic-unary-phrase &
+...
+   ARGS < [ SYNSEM [ LOCAL [ CAT [ VAL [ SPR < >,
+                                         COMPS < >,
+                                         SUBJ < >,
+                                         SPEC < > ],
+                                   HEAD +np, MC + ],
+                             CONT.HOOK.INDEX #possessor ],
+                     NON-LOCAL #nonloc ] ] > ].
+
+However, we were unable to resolve the ambiguity involving wh-questions given the time frame. We plan to continue addressing these issues next week.
+
+We also had a few sources of ambiguity in sentences with adjectives, which we fixed by adding non-local-non-lex-item as a supertype:
+adj-lex := basic-intersective-adjective-lex & non-local-none-lex-item.
+We also cut down on ambiguity by ensuring adjective-adj-lex has a non-empty SUBJ list, with a sole NP:
+
+adjective-adj-lex := attr-adj-lex &
+  [ SYNSEM.LOCAL.CAT [ POSTHEAD -,
+                       VAL.SUBJ < #subj >,
+                       HEAD.PRD + ],
+   ARG-ST < #subj &
+             [ LOCAL [ CAT [ VAL [ SPR < > ],
+                             HEAD noun ] ] ] > ].
+
+After all these changes, our coverage of the grammar has slightly increased from 86% to 88.5%, and overgeneration has also increased from 35.6% to 36.2%. Out of 119 test cases, 75 items parsed, with 1.973 parses per parsed item. The most ambiguous item was our test received 8 parses:
+花 是 水 所以 我 買
+hue1 si4 sui3 soe3i3 gua3 bue3
+flower be pretty so 1SG buy
+The flower is pretty, so I bought it
+
+However, we have greatly cut down ambiguity and the total number of trees generated. Last week our most ambiguous item was our test for omnisyndeton clausal conjunction, with a total of 38 parses. For the same item, we’re only seeing 5 trees now. As previously mentioned, we’ve identified various sources of ambiguity that we’re aiming to address this next week.

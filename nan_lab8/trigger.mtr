@@ -1,0 +1,56 @@
+;;; -*- Mode: TDL; Coding: utf-8 -*-
+;;; Semantically Empty Lexical Entries
+
+咧_gr := arg0e_gtr &
+  [ CONTEXT.RELS.LIST < [ PRED "non_existing_rel" ] >,
+    FLAGS.TRIGGER "咧" ].
+
+著八_gr := arg0e_gtr &
+  [ CONTEXT.RELS.LIST < [ PRED "non_existing_rel" ] >,
+    FLAGS.TRIGGER "著八" ].
+
+啊_gr := generator_rule &
+  [ CONTEXT.RELS.LIST < [ ARG0.SF ques ] >,
+    FLAGS.TRIGGER "啊" ].
+
+所以_gr := arg0e_gtr &
+  [ CONTEXT.RELS.LIST < [ PRED "_so_subord_rel" ] >,
+    FLAGS.TRIGGER "所以" ].
+
+就_gr := arg0e_gtr &
+  [ CONTEXT.RELS.LIST < [ PRED "_then_subord_rel" ] >,
+    FLAGS.TRIGGER "就" ].
+
+看_gtr := generator_rule &
+  [ CONTEXT [ RELS <! [ ARG0 #e & [ SF prop ]] !> ],
+    FLAGS [ EQUAL < #e >,
+            TRIGGER "看" ]].
+
+若_gtr := generator_rule &
+  [ CONTEXT [ RELS <! [ ARG0 #e & [ SF prop ]] !> ],
+    FLAGS [ EQUAL < #e >,
+            TRIGGER "若" ]].
+
+是_gr := generator_rule &
+  [ CONTEXT.RELS <! [ PRED "~._a_" ] !>,
+    FLAGS.TRIGGER "是" ].
+
+伫_locV_gr := generator_rule &
+  [ CONTEXT.RELS <! [ PRED "~._a_" ] !>,
+    FLAGS.TRIGGER "伫_locV" ].
+
+是_gr := generator_rule &
+  [ CONTEXT.RELS <! [ PRED "~._p_" ] !>,
+    FLAGS.TRIGGER "是" ].
+
+伫_locV_gr := generator_rule &
+  [ CONTEXT.RELS <! [ PRED "~._p_" ] !>,
+    FLAGS.TRIGGER "伫_locV" ].
+
+也4_nosem_gr := arg0e_gtr &
+  [ CONTEXT.RELS.LIST < [ PRED "_and_coord_rel" ] >,
+    FLAGS.TRIGGER "也4_nosem" ].
+
+其_gr := arg0e_gtr &
+  [ CONTEXT.RELS.LIST < [ PRED "poss_rel" ] >,
+    FLAGS.TRIGGER "possessor-adp-1" ].

@@ -1,0 +1,1314 @@
+Language: southern_min
+Language code: nan
+Lines: orth translit-seg gloss translat
+Author: Kim and Wang
+Date: January 26, 2024
+Source a: Chen, 2020. "A Grammar of Southern Min" https://doi-org.offcampus.lib.washington.edu/10.1515/9781501511868
+
+
+#1
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {wo, pn}
+我 有 車
+gua3 u4 tshia1
+1SG have car
+I have a car
+
+
+#2 wrong order (SOV)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {wo}
+我 車 有
+gua3 tshia1 u4
+1SG car have
+I have a car
+
+
+#3 wrong order (VSO)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {wo}
+有 我 車
+u4 gua3 tshia1
+have 1SG car
+I have a car
+
+
+#4 wrong order (VOS)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {wo}
+有 車 我
+u4 tshia1 gua3
+have car 1SG
+I have a car
+
+
+#5 wrong order (OSV)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {wo}
+車 我 有
+tshia1 gua3 u4
+car 1SG have
+I have a car
+
+
+#6 wrong order (OVS)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {wo}
+車 有 我
+tshia1 u4 gua3
+car have 1SG
+I have a car
+
+
+#7
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {wo, pn}
+阮 去
+gun3 kheu5
+1PL go
+We go (there)
+
+
+#8
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {wo, prn}
+伊 食 橙
+i1 tsia?8 tshiang2
+3SG eat orange
+He eats an orange
+
+
+#9 pronoun combines with determiner
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {pn}
+即 伊 食 橙
+tsit7 i1 tsia?8 tshiang2
+this 3SG eat orange
+This he eats an orange
+
+
+#10 current grammar cannot account for grammaticality
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {det}
+小妹 買 即 領 衫
+sio32beo5 bue3 tsit7 lia3 sa1
+Y.sister buy this CL clothes
+Younger sister bought this clothing
+
+
+#11 current grammar cannot account for grammaticality
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {det}
+小妹 買 即 領
+sio32beo5 bue3 tsit7 lia3
+Y.sister buy this CL
+Younger sister bought this (clothing)
+
+
+#12 current grammar cannot account for ungrammaticality
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {det}
+小妹 買 即 衫
+sio32beo5 bue3 tsit7 sa1
+Y.sister buy this clothes
+Younger sister bought this clothing
+
+
+#13
+Source: page 363
+Vetted: f
+Judgment: g
+Phenomena: {wh}
+伊 食 啥
+i3 tsia?8 sia2
+3SG eat what
+What did he eat?
+
+
+#14 wh-word in wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {wh}
+啥 伊 食
+sia2 i3 tsia?8
+what 3SG eat
+What did he eat?
+
+
+#15 wh-word in wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {wh}
+伊 啥 食
+i3 sia2 tsia?8
+3SG what eat
+What did he eat?
+
+
+#16
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {wh}
+伊 卜 食 啥
+i3 bo?7 tsia?8 sia2
+3SG want eat what
+What does he want to eat?
+
+
+#17 wh-word in wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {wh}
+伊 卜 啥 食
+i3 bo?7 sia2 tsia?8
+3SG want what eat
+What does he want to eat?
+
+
+#18
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {tam}
+阿爸 咧 睏
+a1pa2 le?7 khun5
+father PROG sleep
+Father is sleeping
+
+
+#19 progressive marker in wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {tam}
+阿爸 睏 咧
+a1pa2 khun5 le?7
+father sleep PROG
+Father is sleeping
+
+
+#20
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {tam}
+老師 坐 咧 商量
+lau4seu3 tseo4 le?7 sioeng1lioeng2
+teacher sit DUR discuss
+The teacher has a discussion while sitting
+
+
+#21 durative marker in wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {tam}
+老師 咧 坐 商量
+lau4seu3 le?7 tseo4 sioeng1lioeng2
+teacher DUR sit discuss
+The teacher has a discussion while sitting
+
+
+#22
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {tam}
+伊 咧 賣 家俱
+i1 le?7 bue4 ka1ku5
+He HAB sell furniture
+He sells furniture (as an occupation)
+
+
+#23 habitual marker in wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {tam}
+伊 賣 咧 家俱
+i1 bue4 le?7 ka1ku5
+He sell HAB furniture
+He sells furniture (as an occupation)
+
+
+#24
+Source: page 223
+Vetted: f
+Judgment: g
+Phenomena: {tam}
+我 八 去 著 北京
+gua3 pat7 kheu5 tio?8 pak7kia1
+I EXP go EXP PN
+I have been to Beijing
+
+
+#25 experiential makers in wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {tam}
+我 去 八 著 北京
+gua3 kheu5 pat7 tio?8 pak7kia1
+I go EXP EXP PN
+I have been to Beijing
+
+
+#26 experiential makers in wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {tam}
+我 八 著 去 北京
+gua3 pat7 tio?8 kheu5 pak7kia1
+I EXP EXP go PN
+I have been to Beijing
+
+
+#27 experiential markers in wrong order
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {tam}
+我 著 去 八 北京
+gua3 tio?8 kheu5 pat7 pak7kia1
+I EXP go EXP PN
+I have been to Beijing
+
+
+#28 negation of active verb
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {neg}
+我 呣 食
+gua3 m5 tsia?8
+1SG not eat
+I don’t want to eat
+
+
+#29 wrong negation order
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {neg}
+我 食 呣
+gua3 tsia?8 m5
+1SG eat not
+I don’t want to eat
+
+
+#30 wrong negation order
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {neg}
+呣 我 食
+m5 gua3 tsia?8
+not 1SG eat
+I don’t want to eat
+
+
+#31 negation of copula verb
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {neg}
+伊 呣 是 大學生
+i1 m5 si4 tua5o?8sing1
+3SG not be university.student
+He is not a university student
+
+
+#32 wrong
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {neg}
+伊 是 呣 大學生
+i1 si4 m5 tua5o?8sing1
+3SG be not university.student
+He is not a university student
+
+
+#33 negation of stative verb
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {neg}
+我 呣 別 汝
+gua3 m5 pat7 leu0
+1SG not know 2SG
+I don't know you
+
+
+#34 wrong negation order
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {neg}
+我 別 呣 汝
+gua3 pat7 m5 leu0
+1SG know not 2SG
+I don't know you
+
+
+#35 no negation of adjective
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {neg}
+即蕊 花 呣 芳
+tsit7-lui3 hue1 m5 phang1
+this-CL flower not fragrant
+This flower is not fragrant
+
+
+#36 negation of modal auxiliary verb with m5
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {neg}
+我 呣 愛 抹
+gua3 m5 ai5 bua?7
+1SG not like smear
+I don’t want to smear (it)
+
+
+#37 wrong order negation of modal auxiliary verb with m5
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {neg}
+我 抹 呣 愛
+gua3 bua?7 m5 ai5
+1SG smear not like
+I don’t want to smear (it)
+
+
+#38 negation with adverb bo
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {neg}
+阿爸 無 同意
+a1pa2 bo2 toeng2i5
+father not.have agree
+Father didn’t agree
+
+
+#39 wrong order negation with adverb bo
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {neg}
+阿爸 同意 無
+a1pa2 toeng2i5 bo2
+father agree not.have
+Father didn’t agree
+
+
+#40 perfective negation of adjective
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {neg}
+我 身體 是 無 好
+gua3 sen1the3 bo2 ho3
+1SG body not.have good
+I am in bad health
+
+
+#41 wrong order perfective negation of adjective
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {neg}
+我 身體 好 無
+gua3 sen1the3 ho3 bo2
+1SG body good not.have
+I am in bad health
+
+
+#42 nominal conjunction word kiau
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {crd}
+我 食 糖 交 鹽
+gua3 tsia?8 thng2 kiau1 ieom2
+1SG eat sugar and salt
+I eat sugar and salt
+
+
+#43 wrong order nominal conjunction word kiau
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {crd}
+我 食 交 糖 鹽
+gua3 tsia?8 kiau1 thng2 ieom2
+1SG eat and sugar salt
+I eat sugar and salt
+
+
+#44 wrong order nominal conjunction word kiau
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {crd}
+我 食 糖 鹽 交
+gua3 tsia?8 thng2 ieom2 kiau1
+1SG eat sugar salt and
+I eat sugar and salt
+
+
+#45 nominal conjunction word ka?
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {crd}
+我 食 糖 合 鹽
+gua3 tsia?8 thng2 ka?7 ieom2
+1SG eat sugar and salt
+I eat sugar and salt
+
+
+#46 wrong order nominal conjunction word ka?
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {crd}
+我 食 合 糖 鹽
+gua3 tsia?8 ka?7 thng2 ieom2
+1SG eat and sugar salt
+I eat sugar and salt
+
+
+#47 wrong order nominal conjunction word ka?
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {crd}
+我 食 糖 鹽 合
+gua3 tsia?8 thng2 ieom2 ka?7
+1SG eat sugar salt and
+I eat sugar and salt
+
+
+#48 verbal conjunction
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {crd}
+伊 走 佫 跳
+i1 tsau3 ko?7 thiau5
+3SG run and jump
+He runs and jumps
+
+
+#49 wrong order verbal conjunction
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {crd}
+伊 走 佫 跳
+i1 ko?7 tsau3 thiau5
+3SG and run jump
+He runs and jumps
+
+
+#50 wrong order verbal conjunction
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {crd}
+伊 走 佫 跳
+i1 tsau3 thiau5 ko?7
+3SG run jump and
+He runs and jumps
+
+
+#51 Omnisyndeton clausal conjunction
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {crd}
+伊 也 無 糖 也 無 鹽
+i1 a4 bo2 thng2 a4 bo2 ieom2
+3SG also not.have sugar also not.have salt
+He has neither sugar nor salt
+
+
+#52 only one clausal conjunction
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {crd}
+伊 無 糖 也 無 鹽
+i1 bo2 thng2 a4 bo2 ieom2
+3SG not.have sugar also not.have salt
+He has neither sugar nor salt
+
+
+#53 wrong order clausal conjunction
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {crd}
+伊 無 糖 也 無 鹽 也
+i1 bo2 thng2 a4 bo2 ieom2 a4
+3SG not.have sugar also not.have salt also
+He has neither sugar nor salt
+
+
+#54 disjunction
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {crd}
+老師 抑 阿爸 卜 來
+lau4seu3 a?8 a1pa2 bo?7 lai2
+teacher or father want come
+Teacher or father will come
+
+
+#55 wrong order disjunction
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {crd}
+抑 老師 阿爸 卜 來
+a?8 lau4seu3 a1pa2 bo?7 lai2
+or teacher father want come
+Teacher or father will come
+
+
+#56 wrong order disjunction
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {crd}
+老師 爸仔 抑 卜 來
+lau4seu3 pa2-a0 a?8 bo?7 lai2
+teacher father-NM or want come
+Teacher or father will come
+
+
+#57 adjective and CL before noun
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {adj}
+我 食 大尾 魚
+gua3 tsia?8 tua5-beo3 heu2
+1SG eat big-CL fish
+I eat big fish
+
+
+#58 wrong order adjective and CL after noun
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {adj}
+我 食 魚 大尾
+gua3 tsia?8 heu2 beo3-tua5
+1SG eat fish big-CL
+I eat big fish
+
+
+#59 adjective before noun
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {adj}
+我 買 新 衫
+gua3 bue3 sen1 sa1
+1SG buy new clothes
+I bought new clothing
+
+
+#60 adjective after noun
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {adj}
+我 買 衫 新
+gua3 bue3 sa1 sen1
+1SG buy clothes new
+I bought new clothing
+
+
+#61
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {cop}
+伊 是 大學生
+i1 si4 tua5o?8sing1
+3SG be university.student
+He is a university student
+
+
+#62 missing copula
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {cop}
+伊 大學生
+i1 tua5o?8sing1
+3SG university.student
+He is a university student
+
+
+#63
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {cop}
+伊 是 水
+i1 si4 sui3
+3SG be pretty
+She is pretty
+
+
+#64 adjectives can stand alone
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {cop}
+伊 水
+i1 sui3
+3SG pretty
+She is pretty
+
+
+#65
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {cop}
+衫 伫 車 裡
+sa1 teu4 tshia1 lai4
+clothes be.at vehicle in
+The clothes are in the car
+
+
+#66 missing copula
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {cop}
+衫 車 裡
+sa1 tshia1 lai4
+clothes vehicle in
+The clothes are in the car
+
+
+#66 missing copula
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {cop}
+衫 車 裡
+sa1 tshia1 lai4
+clothes vehicle in
+The clothes are in the car
+
+
+#67 possessive pronoun construction with genitive marker
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {poss}
+伊 買 我 其 車
+i1 bue3 gua3 e2 tshia1
+3SG buy 1SG GEN vehicle
+He bought my car
+
+
+#68 wrong order possessive pronoun construction
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {poss}
+伊 買 我 車 其
+i1 bue3 gua3 tshia1 e2
+3SG buy 1SG vehicle GEN
+He bought my car
+
+
+#69 wrong order possessive pronoun construction
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {poss}
+伊 買 其 我 車
+i1 bue3 e2 gua3 tshia1
+3SG buy GEN 1SG vehicle
+He bought my car
+
+
+#70 no genitive marker
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {poss}
+伊 買 我 車
+i1 bue3 gua3 tshia1
+3SG buy 1SG vehicle
+He bought my car
+
+
+#71 possessive NP construction with genitive marker
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {poss}
+伊 買 老師 其 車
+i1 bue3 lau4seu3 e2 tshia1
+3SG buy teacher GEN vehicle
+He bought the teacher’s car
+
+
+#72 wrong order possessive NP construction
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {poss}
+伊 買 老師 車 其
+i1 bue3 lau4seu3 tshia1 e2
+3SG buy teacher vehicle GEN
+He bought the teacher’s car
+
+
+#73 wrong order possessive NP construction
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {poss}
+伊 買 其 老師 車
+i1 bue3 e2 lau4seu3 tshia1
+3SG buy GEN teacher vehicle
+He bought the teacher’s car
+
+
+#73 no genitive marker
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {poss}
+伊 買 老師 車
+i1 bue3 lau4seu3 tshia1
+3SG buy teacher vehicle
+He bought the teacher’s car
+
+
+#74 VP-or-NEG interrogative
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {q}
+伊 有 車 抑 無
+i1 u4 tshia1 a?8 bo2
+3SG have car or not
+Does he have a car?
+
+
+#75 VP-or-NegVP interrogative
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {q}
+伊 來 抑 無 來
+i1 lai2 a?8 bo2 lai2
+3SG come or not come
+Is he coming?
+
+
+#76 VP-NegVP interrogative
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {q}
+伊 來  無 來
+i1 lai2 bo2 lai2
+3SG come not come
+Is he coming?
+
+
+#77 interrogative marker a0
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {q}
+呣 食 啊
+m5 tsiaʔ8 a0
+not eat SFP
+Are (you) not eating?
+
+
+#78 interrogative marker in wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {q}
+啊 呣 食
+a0 m5 tsiaʔ8
+SFP not eat
+Are (you) not eating?
+
+
+#79 interrogative marker in wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {q}
+呣 啊 食
+m5 a0 tsiaʔ8
+not SFP eat
+Are (you) not eating?
+
+
+#80 subject dropping
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {pro-d}
+食 橙
+tsia?8 tshiang2
+eat orange
+(I) ate an orange
+
+
+#81 object dropping
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {pro-d}
+我 食
+gua3 tsia?8
+I ate
+I ate (an orange)
+
+
+#82 subject and object dropping
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {pro-d}
+食
+tsia?8
+ate
+(I) ate (an orange)
+
+
+#83 matrix clause and time clause modifier with the adverb then
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {cl-mod}
+我 商量 就 去
+gua3 sioeng1lioeng2 tsiu5 kheu5
+1SG discuss then go
+I left after discussing
+
+
+#83 time clause modifier with the adverb then omitted
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {cl-mod}
+我 商量 去
+gua3 sioeng1lioeng2 kheu5
+1SG discuss go
+I left after discussing
+
+
+#84 the adverb then in wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {cl-mod}
+我 商量 去 就
+gua3 sioeng1lioeng2 kheu5 tsiu5
+1SG discuss go then
+I left after discussing
+
+
+#85 wrong ordering between clausal modifier and matrix clause with the adverb present
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {cl-mod}
+去 就 我 商量
+kheu5 tsiu5 gua3 sioeng1lioeng2
+go then 1SG discuss
+I left after discussing
+
+
+#86 wrong ordering between clausal modifier and matrix clause with the adverb omitted
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {cl-mod}
+去 我 商量
+kheu5 gua3 sioeng1lioeng2
+go 1SG discuss
+I left after discussing
+
+
+#87 declarative clausal complement
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {emb-d}
+伊 說 伊 食 橙
+i1 seo?7 i1 tsia?8 tshiang2
+3SG say 3SG eat orange
+He said he ate an orange
+
+
+#88 declarative clausal complement with think
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {emb-d}
+我 想 花 是 水
+gua3 siun4 hue1 si4 sui3
+1SG think flower be pretty
+I think the flower is pretty
+
+
+#89 declarative clausal complement with think and complementizer
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {emb-d}
+我 想 看 花 是 水
+gua3 siun4 khua5 hue1 si4 sui3
+1SG think COMP flower be pretty
+I think the flower is pretty
+
+
+#90 declarative clausal complement with think and complementizer wrong order
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {emb-d}
+我 看 想 花 是 水
+gua3 khua5 siun4 hue1 si4 sui3
+1SG COMP think flower be pretty
+I think this flower is pretty
+
+
+#91 declarative clausal complement with think and complementizer wrong order
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {emb-d}
+我 想 花 是 水 看
+gua3 siun4 hue1 si4 sui3 khua5
+1SG think flower be pretty COMP
+I think the flower is pretty
+
+
+#92 interrogative clausal complement with ask and if
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {emb-q}
+伊 問 若 我 食 糖
+i1 bng5 lan4 gua3 tsia?8 thng2
+3SG ask if 1SG eat sugar
+He asked if I eat sugar
+
+
+#93 interrogative clausal complement without if
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {emb-q}
+伊 問 我 食 糖
+i1 bng5 gua3 tsia?8 thng2
+3SG ask 1SG eat sugar
+He asked (if) I eat sugar
+
+
+#94 if in wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {emb-q}
+若 伊 問 我 食 糖
+lan4 i1 bng5 gua3 tsia?8 thng2
+if 3SG ask 1SG eat sugar
+He asked if I eat sugar
+
+
+#95 if in wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {emb-q}
+伊 問 我 食 糖 若
+i1 bng5 gua3 tsia?8 thng2 lan4
+3SG ask 1SG eat sugar if
+He asked if I eat sugar
+
+
+#96 matrix clause and consequence clause modifier with the adverb so
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {cl-mod}
+花 是 水 所以 我 買
+hue1 si4 sui3 soe3i3 gua3 bue3
+flower be pretty so 1SG buy
+The flower is pretty, so I bought it
+
+
+#97 matrix clause and consequence clause modifier with the adverb so omitted
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {cl-mod}
+花 是 水 我 買
+hue1 si4 sui3 gua3 bue3
+flower be pretty 1SG buy
+The flower is pretty, so I bought it
+
+
+#98 the adverb so in the wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {cl-mod}
+所以 花 是 水 我 買
+soe3i3 hue1 si4 sui3 gua3 bue3
+so flower be pretty 1SG buy
+The flower is pretty, so I bought it
+
+
+#99 wrong ordering between clausal modifier and matrix clause with the adverb present
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {cl-mod}
+我 買 所以 花 是 水
+gua3 bue3 soe3i3 hue1 si4 sui3
+1SG buy so flower be pretty
+The flower is pretty, so I bought it
+
+
+#100 wrong ordering between clausal modifier and matrix clause with the adverb omitted
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {cl-mod}
+我 買 花 是 水
+gua3 bue3 hue1 si4 sui3
+1SG buy flower be pretty
+The flower is pretty, so I bought it
+
+
+#101 possibility mood with modal auxiliary can
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {tam}
+我 會 去
+gua3 e4 kheu5
+1SG can go
+I can go
+
+
+#102 volition mood with modal auxiliary want
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {tam}
+我 卜 去
+gua3 bo?7 kheu5
+1SG want go
+I want to go
+
+
+#103 necessity mood with modal auxiliary should
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {tam}
+我 著 去
+gua3 tio?8 kheu5
+1SG should go
+I should go
+
+
+#104 imminent negative
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {neg}
+我 未 去
+gua3 beo5 kheu5
+1SG not.yet go
+I didn’t go yet
+
+
+#105 irrealis negative with negator and modal auxiliary can
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {neg}
+我 呣 會 去
+gua3 m5 e4 kheu5
+1SG not can go
+I can’t go
+
+
+#106 imminent negator before another modal auxiliary
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {neg}
+我 未 會 去
+gua3 beo5 e4 kheu5
+1SG not.yet can go
+I can’t go yet
+
+
+#107 wrong order between modal auxiliary and main verb
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {tam}
+我 去 會
+gua3 kheu5 e4
+1SG go can
+I can go
+
+
+#108 wrong order between negator and modal auxiliary
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: {neg}
+我 會 未 去
+gua3 e4 beo5 kheu5
+1SG can not.yet go
+I can’t go yet
+
+
+# mmt 1
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {wo}
+狗 睏
+kau3 khun5
+dog sleep
+Dogs sleep
+
+
+# mmt 2
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {wo}
+狗 追 車
+kau3 tsui1 tshia1
+dog chase car
+Dogs chase cars
+
+
+# mmt 3
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {wo}
+我 追 汝
+gua3 tsui1 leu0
+1SG chase 2SG
+I chase you
+
+# mmt 15
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {wo}
+狗 是 枵
+kau3 si4 iau1
+dog be hungry
+The dogs are hungry
+
+
+# mmt 16
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {wo}
+狗 伫 公園 裡
+kau3 teu4 koeng1hng3 lai4
+dog be.at park in
+The dogs are in the park
+
+
+# mmt 17
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {wo}
+狗 是 貓
+kau3 si4 niau2
+dog be cat
+The dogs are the cats
+
+
+# mmt 20
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {wh}
+啥儂 睏
+sian2lang2 khun5
+who sleep
+Who sleeps
+
+
+# mmt 21
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {wh}
+狗 追 啥
+kau3 tsui1 sia2
+dog chase what
+What do the dogs chase
