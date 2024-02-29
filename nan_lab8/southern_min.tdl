@@ -325,7 +325,7 @@ transitive-interrog-clausal-comps-verb-verb-lex := clausal-verb-lex & clausal-se
                                                     [ FORM finite ],
                                            CONT.HOOK.INDEX.SF ques ] ] > ].
 
-locative-verb-lex := verb-lex & trans-first-arg-control-lex-item &
+locative-verb-lex := verb-lex & trans-first-arg-control-lex-item & norm-sem-lex-item &
  [ SYNSEM.LOCAL [ CAT.VAL [ SUBJ < #subj >,
                             COMPS < #comps >,
                             SPR < >,
