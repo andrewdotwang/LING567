@@ -433,7 +433,7 @@ attr-adj-lex := adj-lex & intersective-mod-lex &
 ;;; Subordinators
 ;;;;;;;;;;;;;;;;;;;
 
-adverb-subord-lex-item := no-rels-hcons-lex-item & basic-icons-lex-item &
+adverb-subord-lex-item := no-rels-hcons-lex-item & basic-icons-lex-item & non-local-none-lex-item &
   [ SYNSEM.LOCAL.CAT [ VAL [ SUBJ < >,
                              SPR < >,
                              SPEC < >,
