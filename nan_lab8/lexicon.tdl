@@ -219,7 +219,7 @@ pak7kia1 := proper-noun-noun-lex &
 
 知 := transitive-decl-clausal-comps-verb-verb-lex &
   [ STEM < "知" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_know_clausal_v_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "_know_v_rel" ].
 
 問 := transitive-interrog-clausal-comps-verb-verb-lex &
   [ STEM < "問" >,
