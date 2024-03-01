@@ -1,3 +1,5 @@
 ;;; Hey, emacs(1), this is -*- Mode: TDL; Coding: utf-8; -*- got it?
 
 after-then := after-then-mtr.
+because-so := because-so-mtr.
+in-insert-be-located := in-insert-be-located-mtr.
