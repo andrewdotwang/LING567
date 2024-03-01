@@ -37,7 +37,7 @@ COG-ST : COG-ST
   * <> *
 
 
-PNG.PERNUM : PERS NUM
+PNG.PERNUM : PER NUM
   3plural <> third pl
   2plural <> second pl
   1plural_excl >> first pl
