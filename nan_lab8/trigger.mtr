@@ -39,11 +39,11 @@
   [ CONTEXT.RELS <! [ PRED "~._a_" ] !>,
     FLAGS.TRIGGER "伫_locV" ].
 
-是_gr := generator_rule &
+是_gr2 := generator_rule &
   [ CONTEXT.RELS <! [ PRED "~._p_" ] !>,
     FLAGS.TRIGGER "是" ].
 
-伫_locV_gr := generator_rule &
+伫_locV_gr2 := generator_rule &
   [ CONTEXT.RELS <! [ PRED "~._p_" ] !>,
     FLAGS.TRIGGER "伫_locV" ].
 

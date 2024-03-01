@@ -852,7 +852,8 @@ s4-bottom-coord-rule := omni-conj-first-bottom-coord-rule & s-bottom-coord-phras
   [ SYNSEM.LOCAL.COORD-STRAT "4" ].
 
 s4-left-coord-rule := omni-conj-first-left-coord-rule & s-bottom-coord-phrase &
-  [ SYNSEM.LOCAL.COORD-STRAT "4" ].
+  [ SYNSEM [ SUBORDINATED none,
+	     LOCAL.COORD-STRAT "4" ] ].
 
 ;;; Coordination Strategy 5
 
@@ -928,3 +929,7 @@ norm-adposition-lex := norm-sem-lex-item & no-hcons-lex-item & basic-intersectiv
 
 normadp1-norm-adposition-lex := norm-adposition-lex &
   [ SYNSEM.LOCAL.CAT.HEAD.INIT - ].
+
+qeq :+
+   [ HARG.INSTLOC #il,
+      LARG.INSTLOC #il ].
