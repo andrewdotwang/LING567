@@ -221,6 +221,22 @@ These change the predications to what we expect in Southern Min, and swap ARG1 a
 
 For sje2nan, we are able to translate 17/18 sentences (not counting any sentences that weren’t covered in sje). The only sentence that we couldn’t translate is #9 again, where the problem is the same as for eng2nan.
 
+Interestingly, our translations for eng2nan and sje2nan for mmt #11 resulted in the question particle getting dropped, and mmt #14 had the locative verb dropped. The resulting translated sentences were still grammatical, but not what we expected. The outputs for nan2nan are still what we expect though.
+
+# mmt 11
+貓 追 狗 啊
+niau2 tsui1 kau3 a0
+cat chase dog SFP
+Do cats chase dogs
+
+# mmt 14
+狗 伫 公園 裡 食
+kau3 teu4 koeng1hng3 lai4 tsia?8
+dog be.at park in eat
+Dogs eat in the park
+
+We’re not sure why this happened, and didn’t have time to work on this unfortunately.
+
 5.
 After all these changes, our coverage of the grammar has slightly decreased from 88.5% to 86.9%, but overgeneration has also decreased from 36.2% to 34.5%. Out of 119 test cases, 73 items parsed, with 1.67 parses per parsed item.
 
